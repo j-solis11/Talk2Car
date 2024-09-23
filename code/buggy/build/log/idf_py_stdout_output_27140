@@ -1,0 +1,171 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SSH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,lenets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15532
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (29) boot: ESP-IDF v5.2-dirty 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Apr 17 2024 19:06:56[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v1.0[0m
+[0;32mI (37) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (42) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (46) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (60) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (67) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (82) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (94) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=21e68h (138856) map[0m
+[0;32mI (150) esp_image: segment 1: paddr=00031e90 vaddr=3ffb0000 size=03ba4h ( 15268) load[0m
+[0;32mI (156) esp_image: segment 2: paddr=00035a3c vaddr=40080000 size=0a5dch ( 42460) load[0m
+[0;32mI (172) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=77e74h (491124) map[0m
+[0;32mI (341) esp_image: segment 4: paddr=000b7e9c vaddr=4008a5dc size=0c15ch ( 49500) load[0m
+[0;32mI (372) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (372) boot: Disabling RNG early entropy source...[0m
+[0;32mI (383) cpu_start: Multicore app[0m
+[0;32mI (392) cpu_start: Pro cpu start user code[0m
+[0;32mI (392) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (392) cpu_start: Application information:[0m
+[0;32mI (395) cpu_start: Project name:     main[0m
+[0;32mI (400) cpu_start: App version:      77a4067-dirty[0m
+[0;32mI (406) cpu_start: Compile time:     Apr 17 2024 19:06:35[0m
+[0;32mI (412) cpu_start: ELF file SHA256:  f84451ff5...[0m
+[0;32mI (417) cpu_start: ESP-IDF:          v5.2-dirty[0m
+[0;32mI (422) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (427) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (432) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (437) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (444) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (450) heap_init: At 3FFB7C88 len 00028378 (160 KiB): DRAM[0m
+[0;32mI (456) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (462) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (469) heap_init: At 40096738 len 000098C8 (38 KiB): IRAM[0m
+[0;32mI (477) spi_flash: detected chip: generic[0m
+[0;32mI (480) spi_flash: flash io: dio[0m
+[0;33mW (484) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (497) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;33mW (507) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (516) main_task: Started on CPU0[0m
+[0;32mI (526) main_task: Calling app_main()[0m
+I (576) wifi:wifi driver task: 3ffbfd78, prio:23, stack:6656, core=0
+I (596) wifi:wifi firmware version: cc1dd81
+I (596) wifi:wifi certification version: v7.0
+I (596) wifi:config NVS flash: enabled
+I (596) wifi:config nano formating: disabled
+I (606) wifi:Init data frame dynamic rx buffer num: 32
+I (606) wifi:Init static rx mgmt buffer num: 5
+I (616) wifi:Init management short buffer num: 32
+I (616) wifi:Init dynamic tx buffer num: 32
+I (626) wifi:Init static rx buffer size: 1600
+I (626) wifi:Init static rx buffer num: 10
+I (626) wifi:Init dynamic rx buffer num: 32
+[0;32mI (636) wifi_init: rx ba win: 6[0m
+[0;32mI (636) wifi_init: tcpip mbox: 32[0m
+[0;32mI (646) wifi_init: udp mbox: 6[0m
+[0;32mI (646) wifi_init: tcp mbox: 6[0m
+[0;32mI (646) wifi_init: tcp tx win: 5760[0m
+[0;32mI (656) wifi_init: tcp rx win: 5760[0m
+[0;32mI (656) wifi_init: tcp mss: 1440[0m
+[0;32mI (666) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (666) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (676) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (756) wifi:mode : sta (24:6f:28:80:e4:20)
+I (756) wifi:enable tsf
+[0;32mI (756) example: wifi_init_sta finished.[0m
+I (766) wifi:new:<5,1>, old:<1,0>, ap:<255,255>, sta:<5,1>, prof:1
+I (766) wifi:state: init -> auth (b0)
+I (776) wifi:state: auth -> assoc (0)
+I (776) wifi:state: assoc -> run (10)
+I (786) wifi:<ba-add>idx:0 (ifx:0, 30:23:03:c7:9f:8c), tid:0, ssn:0, winSize:64
+I (806) wifi:connected with Group_5, aid = 2, channel 5, 40U, bssid = 30:23:03:c7:9f:8c
+I (806) wifi:security: WPA2-PSK, phy: bgn, rssi: -44
+I (816) wifi:pm start, type: 1
+
+I (816) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (836) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (2326) esp_netif_handlers: sta ip: 192.168.1.6, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (2326) example: got ip:192.168.1.6[0m
+[0;32mI (2326) example: connected to ap SSID:Group_5 password:smartsys[0m
+[0;32mI (2336) example: Message sent to server[0m
+[0;32mI (5336) main_task: Returned from app_main()[0m
+1
+[0;32mI (7956) example: Received message from server: 1 or 1[0m
+[0;32mI (9956) example: Message sent to server[0m
+5
+[0;32mI (11286) example: Received message from server: 5 or 5[0m
+[0;32mI (13286) example: Message sent to server[0m
+4
+[0;32mI (13286) example: Received message from server: 4 or 4[0m
+[0;32mI (15286) example: Message sent to server[0m
+3
+[0;32mI (15286) example: Received message from server: 3 or 3[0m
+[0;32mI (17286) example: Message sent to server[0m
+1
+[0;32mI (17286) example: Received message from server: 1 or 1[0m
+[0;32mI (19286) example: Message sent to server[0m
+1
+[0;32mI (19286) example: Received message from server: 1 or 1[0m
+[0;32mI (21286) example: Message sent to server[0m
+5
+[0;32mI (21286) example: Received message from server: 5 or 5[0m
+[0;32mI (23286) example: Message sent to server[0m
+4
+[0;32mI (23286) example: Received message from server: 4 or 4[0m
+[0;32mI (25286) example: Message sent to server[0m
+3
+[0;32mI (25286) example: Received message from server: 3 or 3[0m
+[0;32mI (27286) example: Message sent to server[0m
+3
+[0;32mI (27286) example: Received message from server: 3 or 3[0m
+[0;32mI (29286) example: Message sent to server[0m
+3
+[0;32mI (29286) example: Received message from server: 3 or 3[0m
+[0;32mI (31286) example: Message sent to server[0m
+3
+[0;32mI (31286) example: Received message from server: 3 or 3[0m
+[0;32mI (33286) example: Message sent to server[0m
+3
+[0;32mI (33286) example: Received message from server: 3 or 3[0m
+[0;32mI (35286) example: Message sent to server[0m
+3
+[0;32mI (35286) example: Received message from server: 3 or 3[0m
+[0;32mI (37286) example: Message sent to server[0m
+2
+[0;32mI (37286) example: Received message from server: 2 or 2[0m
+[0;32mI (39286) example: Message sent to server[0m
+2
+[0;32mI (39286) example: Received message from server: 2 or 2[0m
+[0;32mI (41286) example: Message sent to server[0m
+1
+[0;32mI (46916) example: Received message from server: 1 or 1[0m
+[0;32mI (48916) example: Message sent to server[0m
+4
+[0;32mI (48916) example: Received message from server: 4 or 4[0m
+[0;32mI (50916) example: Message sent to server[0m
+5
+[0;32mI (50916) example: Received message from server: 5 or 5[0m
+[0;32mI (52916) example: Message sent to server[0m
+4
+[0;32mI (52916) example: Received message from server: 4 or 4[0m
+[0;32mI (54916) example: Message sent to server[0m
+1
+[0;32mI (54916) example: Received message from server: 1 or 1[0m
+[0;32mI (56916) example: Message sent to server[0m
+1
+[0;32mI (56916) example: Received message from server: 1 or 1[0m
+[0;32mI (58916) example: Message sent to server[0m

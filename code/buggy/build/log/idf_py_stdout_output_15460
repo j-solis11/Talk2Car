@@ -1,0 +1,1355 @@
+ET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv�ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15532
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (29) boot: ESP-IDF v5.2-dirty 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Apr  9 2024 04:04:58[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v1.0[0m
+[0;32mI (37) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (42) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (46) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (60) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (67) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (82) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (94) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=24ba4h (150436) map[0m
+[0;32mI (154) esp_image: segment 1: paddr=00034bcc vaddr=3ffb0000 size=03c1ch ( 15388) load[0m
+[0;32mI (160) esp_image: segment 2: paddr=000387f0 vaddr=40080000 size=07828h ( 30760) load[0m
+[0;32mI (172) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=7d384h (512900) map[0m
+[0;32mI (348) esp_image: segment 4: paddr=000bd3ac vaddr=40087828 size=102cch ( 66252) load[0m
+[0;32mI (386) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (386) boot: Disabling RNG early entropy source...[0m
+[0;32mI (398) cpu_start: Multicore app[0m
+[0;32mI (407) cpu_start: Pro cpu start user code[0m
+[0;32mI (407) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (407) cpu_start: Application information:[0m
+[0;32mI (410) cpu_start: Project name:     main[0m
+[0;32mI (414) cpu_start: App version:      3d22591[0m
+[0;32mI (419) cpu_start: Compile time:     Apr  9 2024 06:22:35[0m
+[0;32mI (425) cpu_start: ELF file SHA256:  f6716cfeb...[0m
+[0;32mI (431) cpu_start: ESP-IDF:          v5.2-dirty[0m
+[0;32mI (436) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (441) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (445) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (450) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (458) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (463) heap_init: At 3FFB7D30 len 000282D0 (160 KiB): DRAM[0m
+[0;32mI (470) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (476) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (483) heap_init: At 40097AF4 len 0000850C (33 KiB): IRAM[0m
+[0;32mI (490) spi_flash: detected chip: generic[0m
+[0;32mI (493) spi_flash: flash io: dio[0m
+[0;33mW (497) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (511) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (522) main_task: Started on CPU0[0m
+[0;32mI (532) main_task: Calling app_main()[0m
+
+>> i2c Config
+- parameters: ok
+- initialized: yes
+
+>> I2C scanning ...
+- Device found at address: 0x45
+- Device found at address: 0x60
+- Device found at address: 0x62
+I (622) wifi:wifi driver task: 3ffbff70, prio:23, stack:6656, core=0
+I (652) wifi:wifi firmware version: cc1dd81
+I (652) wifi:wifi certification version: v7.0
+I (652) wifi:config NVS flash: enabled
+I (652) wifi:config nano formating: disabled
+I (652) wifi:Init data frame dynamic rx buffer num: 32
+I (662) wifi:Init static rx mgmt buffer num: 5
+I (662) wifi:Init management short buffer num: 32
+I (662) wifi:Init dynamic tx buffer num: 32
+I (672) wifi:Init static rx buffer size: 1600
+I (672) wifi:Init static rx buffer num: 10
+I (682) wifi:Init dynamic rx buffer num: 32
+[0;32mI (682) wifi_init: rx ba win: 6[0m
+[0;32mI (682) wifi_init: tcpip mbox: 32[0m
+[0;32mI (692) wifi_init: udp mbox: 6[0m
+[0;32mI (692) wifi_init: tcp mbox: 6[0m
+[0;32mI (692) wifi_init: tcp tx win: 5760[0m
+[0;32mI (702) wifi_init: tcp rx win: 5760[0m
+[0;32mI (702) wifi_init: tcp mss: 1440[0m
+[0;32mI (712) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (712) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (722) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (802) wifi:mode : sta (fc:f5:c4:16:27:98)
+I (802) wifi:enable tsf
+[0;32mI (802) example: wifi_init_sta finished.[0m
+I (812) wifi:new:<5,1>, old:<1,0>, ap:<255,255>, sta:<5,1>, prof:1
+I (822) wifi:state: init -> auth (b0)
+I (822) wifi:state: auth -> assoc (0)
+I (822) wifi:state: assoc -> run (10)
+I (832) wifi:<ba-add>idx:0 (ifx:0, 30:23:03:c7:9f:8c), tid:0, ssn:0, winSize:64
+I (852) wifi:connected with Group_5, aid = 3, channel 5, 40U, bssid = 30:23:03:c7:9f:8c
+I (852) wifi:security: WPA2-PSK, phy: bgn, rssi: -51
+I (862) wifi:pm start, type: 1
+
+I (862) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (912) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (2372) esp_netif_handlers: sta ip: 192.168.1.38, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (2372) example: got ip:192.168.1.38[0m
+[0;32mI (2372) example: connected to ap SSID:Group_5 password:smartsys[0m
+[0;32mI (2382) example: Create timer and operator[0m
+[0;32mI (2382) example: Connect timer and operator[0m
+[0;32mI (2392) example: Create comparator and generator from the operator[0m
+[0;32mI (2392) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2402) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2412) example: Set generator action on timer and compare event[0m
+[0;32mI (2422) example: Enable and start timer[0m
+[0;32mI (6922) example: Message sent to server[0m
+Distance_1: 3	 Distance_2: 3 cm
+[0;32mI (7802) example: Received message from server: -1 or -1[0m
+Distance_1: 0	 Distance_2: 3 cm
+Distance_1: 0	 Distance_2: 2 cm
+Distance_1: 0	 Distance_2: 3 cm
+[0;32mI (9802) example: Message sent to server[0m
+[0;32mI (9802) example: Received message from server: -1 or -1[0m
+[0;32mI (9922) main_task: Returned from app_main()[0m
+Distance_1: 0	 Distance_2: 4 cm
+Distance_1: 3	 Distance_2: 3 cm
+Distance_1: 4	 Distance_2: 3 cm
+[0;32mI (11802) example: Message sent to server[0m
+[0;32mI (11812) example: Received message from server: -1 or -1[0m
+Distance_1: 0	 Distance_2: 3 cm
+Distance_1: 2	 Distance_2: 2 cm
+Distance_1: 2	 Distance_2: 3 cm
+[0;32mI (13812) example: Message sent to server[0m
+[0;32mI (13842) example: Received message from server: -1 or -1[0m
+Distance_1: 0	 Distance_2: 3 cm
+Distance_1: 1	 Distance_2: 3 cm
+Distance_1: 8	 Distance_2: 4 cm
+Distance_1: 8	 Distance_2: 2 cm
+[0;32mI (15842) example: Message sent to server[0m
+[0;32mI (15842) example: Received message from server: -1 or -1[0m
+Distance_1: 3	 Distance_2: 3 cm
+Distance_1: 0	 Distance_2: 3 cm
+Distance_1: 0	 Distance_2: 3 cm
+[0;32mI (17842) example: Message sent to server[0m
+[0;32mI (17862) example: Received message from server: -1 or -1[0m
+Distance_1: 1	 Distance_2: 4 cm
+Distance_1: 2	 Distance_2: 8 cm
+Distance_1: 0	 Distance_2: 21 cm
+[0;32mI (19862) example: Message sent to server[0m
+[0;32mI (19902) example: Received message from server: -1 or -1[0m
+Distance_1: 4	 Distance_2: 18 cm
+Distance_1: 16	 Distance_2: 15 cm
+Distance_1: 9	 Distance_2: 9 cm
+[0;32mI (21902) example: Message sent to server[0m
+[0;32mI (21942) example: Received message from server: -1 or -1[0m
+Distance_1: 6	 Distance_2: 9 cm
+Distance_1: 8	 Distance_2: 9 cm
+Distance_1: 9	 Distance_2: 15 cm
+Distance_1: 6	 Distance_2: 5 cm
+[0;32mI (23942) example: Message sent to server[0m
+[0;32mI (23942) example: Received message from server: -1 or -1[0m
+Distance_1: 1	 Distance_2: 6 cm
+Distance_1: 4	 Distance_2: 5 cm
+Distance_1: 4	 Distance_2: 5 cm
+[0;32mI (25942) example: Message sent to server[0m
+[0;32mI (25952) example: Received message from server: -1 or -1[0m
+Distance_1: 0	 Distance_2: 5 cm
+Distance_1: 5	 Distance_2: 4 cm
+Distance_1: 0	 Distance_2: 4 cm
+[0;32mI (27952) example: Message sent to server[0m
+[0;32mI (27972) example: Received message from server: -1 or -1[0m
+Distance_1: 0	 Distance_2: 4 cm
+Distance_1: 0	 Distance_2: 4 cm
+Distance_1: 4	 Distance_2: 3 cm
+[0;32mI (29972) example: Message sent to server[0m
+[0;32mI (30102) example: Received message from server: -1 or -1[0m
+Distance_1: 2	 Distance_2: 5 cm
+Distance_1: 0	 Distance_2: 9 cm
+Distance_1: 8	 Distance_2: 8 cm
+[0;32mI (32102) example: Message sent to server[0m
+Distance_1: 6	 Distance_2: 8 cm
+[0;32mI (32252) example: Received message from server: -1 or -1[0m
+Distance_1: 0	 Distance_2: 127 cm
+Distance_1: 45	 Distance_2: 128 cm
+Distance_1: 45	 Distance_2: 128 cm
+[0;32mI (34252) example: Message sent to server[0m
+[0;32mI (34272) example: Received message from server: -1 or -1[0m
+Distance_1: 0	 Distance_2: 15 cm
+Distance_1: 12	 Distance_2: 129 cm
+Distance_1: 0	 Distance_2: 127 cm
+[0;32mI (36272) example: Message sent to server[0m
+[0;32mI (36442) example: Received message from server: -1 or -1[0m
+Distance_1: 0	 Distance_2: 126 cm
+Distance_1: 44	 Distance_2: 131 cm
+Distance_1: 2	 Distance_2: 130 cm
+Distance_1: 2	 Distance_2: 130 cm
+[0;32mI (38442) example: Message sent to server[0m
+[0;32mI (38462) example: Received message from server: -1 or -1[0m
+Distance_1: 2	 Distance_2: 131 cm
+Distance_1: 2	 Distance_2: 131 cm
+Distance_1: 44800	 Distance_2: 131 cm
+[0;32mI (40462) example: Message sent to server[0m
+[0;32mI (40642) example: Received message from server: -1 or -1[0m
+Distance_1: 2	 Distance_2: 130 cm
+Distance_1: 2	 Distance_2: 130 cm
+Distance_1: 1	 Distance_2: 130 cm
+[0;32mI (42642) example: Message sent to server[0m
+[0;32mI (42652) example: Received message from server: -1 or -1[0m
+Distance_1: 1	 Distance_2: 131 cm
+Distance_1: 3	 Distance_2: 129 cm
+Distance_1: 2	 Distance_2: 130 cm
+[0;32mI (44652) example: Message sent to server[0m
+Distance_1: 2	 Distance_2: 131 cm
+[0;32mI (44842) example: Received message from server: -1 or -1[0m
+Distance_1: 2	 Distance_2: 131 cm
+Distance_1: 0	 Distance_2: 130 cm
+Distance_1: 0	 Distance_2: 131 cm
+[0;32mI (46842) example: Message sent to server[0m
+[0;32mI (46852) example: Received message from server: -1 or -1[0m
+Distance_1: 1	 Distance_2: 130 cm
+Distance_1: 0	 Distance_2: 130 cm
+Distance_1: 2	 Distance_2: 130 cm
+[0;32mI (48852) example: Message sent to server[0m
+[0;32mI (49042) example: Received message from server: -1 or -1[0m
+Distance_1: 0	 Distance_2: 131 cm
+Distance_1: 1	 Distance_2: 130 cm
+Distance_1: 1	 Distance_2: 130 cm
+Distance_1: 1	 Distance_2: 131 cm
+[0;32mI (51042) example: Message sent to server[0m
+[0;32mI (51052) example: Received message from server: -1 or -1[0m
+Distance_1: 0	 Distance_2: 130 cm
+Distance_1: 1	 Distance_2: 130 cm
+Distance_1: 3	 Distance_2: 131 cm
+[0;32mI (53052) example: Message sent to server[0m
+[0;32mI (53242) example: Received message from server: -1 or -1[0m
+Distance_1: 3	 Distance_2: 132 cm
+Distance_1: 2	 Distance_2: 5 cm
+Distance_1: 4	 Distance_2: 5 cm
+[0;32mI (55242) example: Message sent to server[0m
+[0;32mI (55252) example: Received message from server: -1 or -1[0m
+Distance_1: 1	 Distance_2: 7 cm
+Distance_1: 8	 Distance_2: 9 cm
+Distance_1: 9	 Distance_2: 8 cm
+[0;32mI (57252) example: Message sent to server[0m
+Distance_1: 8	 Distance_2: 9 cm
+[0;32mI (57442) example: Received message from server: -1 or -1[0m
+Distance_1: 8	 Distance_2: 9 cm
+Distance_1: 9	 Distance_2: 9 cm
+Distance_1: 10	 Distance_2: 9 cm
+[0;32mI (59442) example: Message sent to server[0m
+[0;32mI (59442) example: Received message from server: -1 or -1[0m
+Distance_1: 8	 Distance_2: 15 cm
+Distance_1: 10	 Distance_2: 34 cm
+Distance_1: 32	 Distance_2: 84 cm
+[0;32mI (61442) example: Message sent to server[0m
+[0;32mI (61532) example: Received message from server: -1 or -1[0m
+Distance_1: 0	 Distance_2: 136 cm
+Distance_1: 9	 Distance_2: 136 cm
+Distance_1: 10	 Distance_2: 135 cm
+[0;32mI (63532) example: Message sent to server[0m
+Distance_1: 2	 Distance_2: 66 cm
+[0;32mI (63682) example: Received message from server: -1 or -1[0m
+Distance_1: 8	 Distance_2: 10 cm
+Distance_1: 0	 Distance_2: 11 cm
+Distance_1: 8	 Distance_2: 11 cm
+[0;32mI (65682) example: Message sent to server[0m
+[0;32mI (65722) example: Received message from server: -1 or -1[0m
+Distance_1: 10	 Distance_2: 11 cm
+Distance_1: 9	 Distance_2: 11 cm
+Distance_1: 8	 Distance_2: 9 cm
+[0;32mI (67722) example: Message sent to server[0m
+[0;32mI (67882) example: Received message from server: -1 or -1[0m
+Distance_1: 8	 Distance_2: 9 cm
+Distance_1: 1	 Distance_2: 8 cm
+Distance_1: 8	 Distance_2: 9 cm
+[0;32mI (69882) example: Message sent to server[0m
+[0;32mI (69912) example: Received message from server: -1 or -1[0m
+Distance_1: 0	 Distance_2: 6 cm
+Distance_1: 4	 Distance_2: 6 cm
+Distance_1: 4	 Distance_2: 5 cm
+Distance_1: 6	 Distance_2: 6 cm
+[0;32mI (71912) example: Message sent to server[0m
+[0;32mI (72082) example: Received message from server: -1 or -1[0m
+Distance_1: 5	 Distance_2: 7 cm
+Distance_1: 0	 Distance_2: 7 cm
+Distance_1: 2	 Distance_2: 4 cm
+[0;32mI (74082) example: Message sent to server[0m
+[0;32mI (74112) example: Received message from server: -1 or -1[0m
+Distance_1: 0	 Distance_2: 3 cm
+Distance_1: 0	 Distance_2: 3 cm
+Distance_1: 4	 Distance_2: 4 cm
+[0;32mI (76112) example: Message sent to server[0m
+Distance_1: 0	 Distance_2: 5 cm
+[0;32mI (76282) example: Received message from server: -1 or -1[0m
+Distance_1: 0	 Distance_2: 136 cm
+Distance_1: 0	 Distance_2: 136 cm
+Distance_1: 2	 Distance_2: 136 cm
+[0;32mI (78282) example: Message sent to server[0m
+[0;32mI (78302) example: Received message from server: -1 or -1[0m
+Distance_1: 0	 Distance_2: 136 cm
+Distance_1: 0	 Distance_2: 137 cm
+Distance_1: 1	 Distance_2: 135 cm
+[0;32mI (80302) example: Message sent to server[0m
+[0;32mI (80302) example: Received message from server: -1 or -1[0m
+Distance_1: 2	 Distance_2: 136 cm
+Distance_1: 0	 Distance_2: 137 cm
+Distance_1: 8	 Distance_2: 136 cm
+[0;32mI (82302) example: Message sent to server[0m
+[0;32mI (82342) example: Received message from server: -1 or -1[0m
+Distance_1: 2	 Distance_2: 136 cm
+Distance_1: 8	 Distance_2: 136 cm
+Distance_1: 10	 Distance_2: 136 cm
+[0;32mI (84342) example: Message sent to server[0m
+[0;32mI (84352) example: Received message from server: -1 or -1[0m
+Distance_1: 8	 Distance_2: 136 cm
+Distance_1: 0	 Distance_2: 136 cm
+Distance_1: 2	 Distance_2: 136 cm
+Distance_1: 2	 Distance_2: 135 cm
+[0;32mI (86352) example: Message sent to server[0m
+[0;32mI (86352) example: Received message from server: -1 or -1[0m
+Distance_1: 2	 Distance_2: 136 cm
+Distance_1: 8	 Distance_2: 136 cm
+Distance_1: 8	 Distance_2: 136 cm
+[0;32mI (88352) example: Message sent to server[0m
+[0;32mI (88362) example: Received message from server: -1 or -1[0m
+Distance_1: 0	 Distance_2: 136 cm
+Distance_1: 3	 Distance_2: 136 cm
+Distance_1: 8	 Distance_2: 135 cm
+[0;32mI (90362) example: Message sent to server[0m
+[0;32mI (90362) example: Received message from server: -1 or -1[0m
+Distance_1: 7	 Distance_2: 136 cm
+Distance_1: 6	 Distance_2: 135 cm
+Distance_1: 0	 Distance_2: 136 cm
+[0;32mI (92362) example: Message sent to server[0m
+[0;32mI (92382) example: Received message from server: -1 or -1[0m
+Distance_1: 0	 Distance_2: 137 cm
+Distance_1: 0	 Distance_2: 136 cm
+Distance_1: 0	 Distance_2: 137 cm
+[0;32mI (94382) example: Message sent to server[0m
+[0;32mI (94382) example: Received message from server: -1 or -1[0m
+Distance_1: 5	 Distance_2: 135 cm
+Distance_1: 0	 Distance_2: 135 cm
+Distance_1: 0	 Distance_2: 136 cm
+[0;32mI (96382) example: Message sent to server[0m
+Distance_1: 0	 Distance_2: 137 cm
+[0;32mI (96432) example: Received message from server: -1 or -1[0m
+Distance_1: 0	 Distance_2: 136 cm
+Distance_1: 0	 Distance_2: 135 cm
+Distance_1: 2	 Distance_2: 137 cm
+[0;32mI (98432) example: Message sent to server[0m
+[0;32mI (98432) example: Received message from server: -1 or -1[0m
+Distance_1: 0	 Distance_2: 137 cm
+Distance_1: 2	 Distance_2: 136 cm
+Distance_1: 2	 Distance_2: 135 cm
+[0;32mI (100432) example: Message sent to server[0m
+[0;32mI (100432) example: Received message from server: -1 or -1[0m
+Distance_1: 2	 Distance_2: 135 cm
+Distance_1: 0	 Distance_2: 135 cm
+Distance_1: 0	 Distance_2: 135 cm
+[0;32mI (102432) example: Message sent to server[0m
+[0;32mI (102432) example: Received message from server: -1 or -1[0m
+Distance_1: 0	 Distance_2: 135 cm
+Distance_1: 2	 Distance_2: 135 cm
+Distance_1: 8	 Distance_2: 135 cm
+[0;32mI (104432) example: Message sent to server[0m
+[0;32mI (104542) example: Received message from server: -1 or -1[0m
+Distance_1: 8	 Distance_2: 135 cm
+Distance_1: 1	 Distance_2: 135 cm
+Distance_1: 3	 Distance_2: 136 cm
+Distance_1: 11	 Distance_2: 136 cm
+[0;32mI (106542) example: Message sent to server[0m
+[0;32mI (106692) example: Received message from server: -1 or -1[0m
+Distance_1: 0	 Distance_2: 135 cm
+Distance_1: 4	 Distance_2: 135 cm
+Distance_1: 4	 Distance_2: 136 cm
+[0;32mI (108692) example: Message sent to server[0m
+[0;32mI (108712) example: Received message from server: -1 or -1[0m
+Distance_1: 8	 Distance_2: 136 cm
+Distance_1: 8	 Distance_2: 136 cm
+Distance_1: 10	 Distance_2: 136 cm
+[0;32mI (110712) example: Message sent to server[0m
+[0;32mI (110712) example: Received message from server: -1 or -1[0m
+Distance_1: 9	 Distance_2: 135 cm
+Distance_1: 8	 Distance_2: 136 cm
+Distance_1: 6	 Distance_2: 137 cm
+[0;32mI (112712) example: Message sent to server[0m
+[0;32mI (112712) example: Received message from server: -1 or -1[0m
+Distance_1: 6	 Distance_2: 136 cm
+Distance_1: 0	 Distance_2: 135 cm
+Distance_1: 0	 Distance_2: 135 cm
+[0;32mI (114712) example: Message sent to server[0m
+[0;32mI (114712) example: Received message from server: -1 or -1[0m
+Distance_1: 2	 Distance_2: 136 cm
+Distance_1: 1	 Distance_2: 135 cm
+Distance_1: 1	 Distance_2: 135 cm
+Distance_1: 0	 Distance_2: 135 cm
+[0;32mI (116712) example: Message sent to server[0m
+[0;32mI (116712) example: Received message from server: -1 or -1[0m
+Distance_1: 2	 Distance_2: 136 cm
+Distance_1: 1	 Distance_2: 136 cm
+Distance_1: 1	 Distance_2: 136 cm
+[0;32mI (118712) example: Message sent to server[0m
+[0;32mI (118712) example: Received message from server: -1 or -1[0m
+Distance_1: 3	 Distance_2: 136 cm
+Distance_1: 9	 Distance_2: 136 cm
+Distance_1: 44800	 Distance_2: 135 cm
+[0;32mI (120722) example: Message sent to server[0m
+[0;32mI (120742) example: Received message from server: -1 or -1[0m
+Distance_1: 132	 Distance_2: 136 cm
+Distance_1: 136	 Distance_2: 137 cm
+Distance_1: 136	 Distance_2: 136 cm
+[0;32mI (122742) example: Message sent to server[0m
+[0;32mI (122742) example: Received message from server: -1 or -1[0m
+Distance_1: 0	 Distance_2: 132 cm
+Distance_1: 130	 Distance_2: 135 cm
+Distance_1: 134	 Distance_2: 135 cm
+[0;32mI (124742) example: Message sent to server[0m
+[0;32mI (124742) example: Received message from server: -1 or -1[0m
+Distance_1: 0	 Distance_2: 136 cm
+Distance_1: 133	 Distance_2: 135 cm
+Distance_1: 136	 Distance_2: 135 cm
+Distance_1: 133	 Distance_2: 135 cm
+[0;32mI (126742) example: Message sent to server[0m
+[0;32mI (126742) example: Received message from server: -1 or -1[0m
+Distance_1: 132	 Distance_2: 135 cm
+Distance_1: 135	 Distance_2: 136 cm
+Distance_1: 132	 Distance_2: 136 cm
+[0;32mI (128742) example: Message sent to server[0m
+[0;32mI (128742) example: Received message from server: -1 or -1[0m
+Distance_1: 8	 Distance_2: 136 cm
+Distance_1: 8	 Distance_2: 136 cm
+Distance_1: 8	 Distance_2: 135 cm
+[0;32mI (130742) example: Message sent to server[0m
+[0;32mI (130742) example: Received message from server: -1 or -1[0m
+Distance_1: 2	 Distance_2: 135 cm
+Distance_1: 0	 Distance_2: 136 cm
+Distance_1: 0	 Distance_2: 135 cm
+[0;32mI (132742) example: Message sent to server[0m
+[0;32mI (132912) example: Received message from server: -1 or -1[0m
+Distance_1: 6	 Distance_2: 135 cm
+Distance_1: 7	 Distance_2: 135 cm
+Distance_1: 0	 Distance_2: 136 cm
+[0;32mI (134912) example: Message sent to server[0m
+[0;32mI (134942) example: Received message from server: -1 or -1[0m
+Distance_1: 10	 Distance_2: 136 cm
+Distance_1: 4	 Distance_2: 10 cm
+Distance_1: 1	 Distance_2: 11 cm
+Distance_1: 10	 Distance_2: 11 cm
+[0;32mI (136942) example: Message sent to server[0m
+[0;32mI (137102) example: Received message from server: -1 or -1[0m
+Distance_1: 12	 Distance_2: 10 cm
+Distance_1: 9	 Distance_2: 11 cm
+Distance_1: 44800	 Distance_2: 11 cm
+[0;32mI (139102) example: Message sent to server[0m
+[0;32mI (139152) example: Received message from server: -1 or -1[0m
+Distance_1: 0	 Distance_2: 11 cm
+Distance_1: 8	 Distance_2: 8 cm
+Distance_1: 0	 Distance_2: 8 cm
+[0;32mI (141152) example: Message sent to server[0m
+Distance_1: 3	 Distance_2: 135 cm
+[0;32mI (141302) example: Received message from server: -1 or -1[0m
+Distance_1: 4	 Distance_2: 135 cm
+Distance_1: 2	 Distance_2: 136 cm
+Distance_1: 0	 Distance_2: 136 cm
+[0;32mI (143302) example: Message sent to server[0m
+[0;32mI (143312) example: Received message from server: -1 or -1[0m
+Distance_1: 0	 Distance_2: 133 cm
+Distance_1: 0	 Distance_2: 136 cm
+Distance_1: 0	 Distance_2: 135 cm
+[0;32mI (145312) example: Message sent to server[0m
+[0;32mI (145502) example: Received message from server: -1 or -1[0m
+Distance_1: 0	 Distance_2: 132 cm
+Distance_1: 4	 Distance_2: 132 cm
+Distance_1: 0	 Distance_2: 131 cm
+[0;32mI (147502) example: Message sent to server[0m
+[0;32mI (147512) example: Received message from server: -1 or -1[0m
+Distance_1: 2	 Distance_2: 132 cm
+Distance_1: 2	 Distance_2: 133 cm
+Distance_1: 2	 Distance_2: 131 cm
+Distance_1: 4	 Distance_2: 132 cm
+[0;32mI (149512) example: Message sent to server[0m
+[0;32mI (149702) example: Received message from server: -1 or -1[0m
+Distance_1: 0	 Distance_2: 132 cm
+Distance_1: 5	 Distance_2: 131 cm
+Distance_1: 1	 Distance_2: 133 cm
+[0;32mI (151702) example: Message sent to server[0m
+[0;32mI (151712) example: Received message from server: -1 or -1[0m
+Distance_1: 0	 Distance_2: 132 cm
+Distance_1: 3	 Distance_2: 132 cm
+Distance_1: 0	 Distance_2: 131 cm
+[0;32mI (153712) example: Message sent to server[0m
+Distance_1: 128	 Distance_2: 132 cm
+[0;32mI (153902) example: Received message from server: -1 or -1[0m
+Distance_1: 0	 Distance_2: 132 cm
+Distance_1: 3	 Distance_2: 132 cm
+Distance_1: 2	 Distance_2: 133 cm
+[0;32mI (155902) example: Message sent to server[0m
+[0;32mI (155902) example: Received message from server: -1 or -1[0m
+Distance_1: 4	 Distance_2: 132 cm
+Distance_1: 133	 Distance_2: 132 cm
+Distance_1: 3	 Distance_2: 132 cm
+[0;32mI (157902) example: Message sent to server[0m
+[0;32mI (158102) example: Received message from server: -1 or -1[0m
+Distance_1: 130	 Distance_2: 131 cm
+Distance_1: 4	 Distance_2: 132 cm
+Distance_1: 0	 Distance_2: 133 cm
+[0;32mI (160102) example: Message sent to server[0m
+[0;32mI (160102) example: Received message from server: -1 or -1[0m
+Distance_1: 3	 Distance_2: 131 cm
+Distance_1: 0	 Distance_2: 99 cm
+Distance_1: 0	 Distance_2: 72 cm
+Distance_1: 8	 Distance_2: 72 cm
+[0;32mI (162102) example: Message sent to server[0m
+[0;32mI (162192) example: Received message from server: -1 or -1[0m
+Distance_1: 0	 Distance_2: 72 cm
+Distance_1: 8	 Distance_2: 73 cm
+Distance_1: 8	 Distance_2: 82 cm
+[0;32mI (164192) example: Message sent to server[0m
+[0;32mI (164352) example: Received message from server: -1 or -1[0m
+Distance_1: 16	 Distance_2: 132 cm
+Distance_1: 4	 Distance_2: 132 cm
+Distance_1: 1	 Distance_2: 132 cm
+[0;32mI (166352) example: Message sent to server[0m
+Distance_1: 3	 Distance_2: 132 cm
+Distance_1: 4	 Distance_2: 131 cm
+Distance_1: 5	 Distance_2: 132 cm
+Distance_1: 3	 Distance_2: 132 cm
+Distance_1: 2	 Distance_2: 131 cm
+Distance_1: 2	 Distance_2: 131 cm
+Distance_1: 1	 Distance_2: 132 cm
+Distance_1: 0	 Distance_2: 132 cm
+Distance_1: 2	 Distance_2: 133 cm
+Distance_1: 4	 Distance_2: 132 cm
+Distance_1: 0	 Distance_2: 132 cm
+Distance_1: 0	 Distance_2: 132 cm
+Distance_1: 0	 Distance_2: 133 cm
+Distance_1: 0	 Distance_2: 131 cm
+Distance_1: 3	 Distance_2: 131 cm
+Distance_1: 130	 Distance_2: 132 cm
+Distance_1: 0	 Distance_2: 132 cm
+Distance_1: 9	 Distance_2: 132 cm
+Distance_1: 4	 Distance_2: 133 cm
+Distance_1: 2	 Distance_2: 132 cm
+Distance_1: 4	 Distance_2: 132 cm
+Distance_1: 0	 Distance_2: 132 cm
+Distance_1: 0	 Distance_2: 131 cm
+Distance_1: 1	 Distance_2: 133 cm
+Distance_1: 0	 Distance_2: 131 cm
+Distance_1: 0	 Distance_2: 132 cm
+Distance_1: 0	 Distance_2: 44822 cm
+Distance_1: 0	 Distance_2: 133 cm
+Distance_1: 4	 Distance_2: 132 cm
+Distance_1: 0	 Distance_2: 132 cm
+Distance_1: 0	 Distance_2: 131 cm
+Distance_1: 1	 Distance_2: 131 cm
+Distance_1: 2	 Distance_2: 131 cm
+Distance_1: 0	 Distance_2: 132 cm
+Distance_1: 0	 Distance_2: 133 cm
+Distance_1: 2	 Distance_2: 132 cm
+Distance_1: 0	 Distance_2: 133 cm
+Distance_1: 0	 Distance_2: 132 cm
+Distance_1: 0	 Distance_2: 132 cm
+Distance_1: 0	 Distance_2: 132 cm
+Distance_1: 0	 Distance_2: 133 cm
+Distance_1: 0	 Distance_2: 132 cm
+Distance_1: 0	 Distance_2: 133 cm
+Distance_1: 0	 Distance_2: 132 cm
+Distance_1: 0	 Distance_2: 132 cm
+Distance_1: 1	 Distance_2: 132 cm
+Distance_1: 0	 Distance_2: 131 cm
+Distance_1: 4	 Distance_2: 133 cm
+Distance_1: 0	 Distance_2: 133 cm
+Distance_1: 4	 Distance_2: 44822 cm
+Distance_1: 4	 Distance_2: 132 cm
+Distance_1: 0	 Distance_2: 132 cm
+Distance_1: 0	 Distance_2: 132 cm
+Distance_1: 0	 Distance_2: 132 cm
+Distance_1: 0	 Distance_2: 132 cm
+Distance_1: 0	 Distance_2: 132 cm
+Distance_1: 0	 Distance_2: 132 cm
+Distance_1: 4	 Distance_2: 131 cm
+Distance_1: 4	 Distance_2: 131 cm
+Distance_1: 2	 Distance_2: 132 cm
+Distance_1: 4	 Distance_2: 132 cm
+Distance_1: 0	 Distance_2: 131 cm
+Distance_1: 0	 Distance_2: 131 cm
+Distance_1: 4	 Distance_2: 132 cm
+Distance_1: 0	 Distance_2: 132 cm
+Distance_1: 0	 Distance_2: 131 cm
+Distance_1: 0	 Distance_2: 132 cm
+Distance_1: 4	 Distance_2: 133 cm
+Distance_1: 4	 Distance_2: 132 cm
+Distance_1: 4	 Distance_2: 131 cm
+Distance_1: 3	 Distance_2: 133 cm
+Distance_1: 4	 Distance_2: 133 cm
+Distance_1: 4	 Distance_2: 132 cm
+Distance_1: 3	 Distance_2: 131 cm
+Distance_1: 0	 Distance_2: 132 cm
+Distance_1: 1	 Distance_2: 132 cm
+Distance_1: 1	 Distance_2: 132 cm
+Distance_1: 2	 Distance_2: 131 cm
+Distance_1: 3	 Distance_2: 132 cm
+Distance_1: 0	 Distance_2: 131 cm
+Distance_1: 5	 Distance_2: 132 cm
+Distance_1: 0	 Distance_2: 132 cm
+Distance_1: 2	 Distance_2: 133 cm
+Distance_1: 1	 Distance_2: 132 cm
+Distance_1: 4	 Distance_2: 131 cm
+Distance_1: 0	 Distance_2: 133 cm
+Distance_1: 4	 Distance_2: 132 cm
+Distance_1: 0	 Distance_2: 132 cm
+Distance_1: 3	 Distance_2: 132 cm
+Distance_1: 2	 Distance_2: 132 cm
+Distance_1: 0	 Distance_2: 132 cm
+Distance_1: 0	 Distance_2: 131 cm
+Distance_1: 1	 Distance_2: 132 cm
+Distance_1: 4	 Distance_2: 132 cm
+Distance_1: 4	 Distance_2: 132 cm
+Distance_1: 0	 Distance_2: 132 cm
+Distance_1: 0	 Distance_2: 132 cm
+Distance_1: 0	 Distance_2: 132 cm
+Distance_1: 0	 Distance_2: 132 cm
+Distance_1: 0	 Distance_2: 132 cm
+Distance_1: 4	 Distance_2: 132 cm
+Distance_1: 0	 Distance_2: 132 cm
+Distance_1: 3	 Distance_2: 132 cm
+Distance_1: 0	 Distance_2: 133 cm
+Distance_1: 3	 Distance_2: 132 cm
+Distance_1: 1	 Distance_2: 131 cm
+Distance_1: 0	 Distance_2: 132 cm
+Distance_1: 0	 Distance_2: 133 cm
+Distance_1: 44800	 Distance_2: 131 cm
+Distance_1: 3	 Distance_2: 132 cm
+Distance_1: 2	 Distance_2: 131 cm
+Distance_1: 0	 Distance_2: 133 cm
+Distance_1: 0	 Distance_2: 132 cm
+Distance_1: 0	 Distance_2: 133 cm
+Distance_1: 0	 Distance_2: 132 cm
+Distance_1: 0	 Distance_2: 132 cm
+Distance_1: 0	 Distance_2: 132 cm
+Distance_1: 3	 Distance_2: 131 cm
+Distance_1: 3	 Distance_2: 132 cm
+Distance_1: 0	 Distance_2: 132 cm
+Distance_1: 0	 Distance_2: 133 cm
+Distance_1: 0	 Distance_2: 133 cm
+Distance_1: 0	 Distance_2: 132 cm
+Distance_1: 1	 Distance_2: 131 cm
+Distance_1: 3	 Distance_2: 132 cm
+Distance_1: 0	 Distance_2: 131 cm
+Distance_1: 0	 Distance_2: 132 cm
+Distance_1: 4	 Distance_2: 132 cm
+Distance_1: 0	 Distance_2: 133 cm
+Distance_1: 2	 Distance_2: 132 cm
+Distance_1: 0	 Distance_2: 132 cm
+Distance_1: 1	 Distance_2: 132 cm
+Distance_1: 2	 Distance_2: 133 cm
+Distance_1: 2	 Distance_2: 133 cm
+Distance_1: 5	 Distance_2: 133 cm
+Distance_1: 0	 Distance_2: 132 cm
+Distance_1: 4	 Distance_2: 132 cm
+Distance_1: 1	 Distance_2: 132 cm
+Distance_1: 1	 Distance_2: 124 cm
+Distance_1: 6	 Distance_2: 42 cm
+Distance_1: 1	 Distance_2: 35 cm
+Distance_1: 12	 Distance_2: 133 cm
+Distance_1: 4	 Distance_2: 131 cm
+Distance_1: 3	 Distance_2: 132 cm
+Distance_1: 1	 Distance_2: 132 cm
+Distance_1: 0	 Distance_2: 132 cm
+Distance_1: 4	 Distance_2: 132 cm
+Distance_1: 4	 Distance_2: 131 cm
+Distance_1: 4	 Distance_2: 132 cm
+Distance_1: 4	 Distance_2: 132 cm
+Distance_1: 1	 Distance_2: 132 cm
+Distance_1: 4	 Distance_2: 133 cm
+Distance_1: 4	 Distance_2: 131 cm
+Distance_1: 5	 Distance_2: 49 cm
+Distance_1: 5	 Distance_2: 45 cm
+Distance_1: 5	 Distance_2: 52 cm
+Distance_1: 4	 Distance_2: 50 cm
+Distance_1: 2	 Distance_2: 50 cm
+Distance_1: 0	 Distance_2: 50 cm
+Distance_1: 0	 Distance_2: 49 cm
+Distance_1: 2	 Distance_2: 51 cm
+Distance_1: 1	 Distance_2: 52 cm
+Distance_1: 48	 Distance_2: 52 cm
+Distance_1: 0	 Distance_2: 50 cm
+Distance_1: 52	 Distance_2: 69 cm
+Distance_1: 80	 Distance_2: 129 cm
+Distance_1: 0	 Distance_2: 130 cm
+Distance_1: 128	 Distance_2: 128 cm
+Distance_1: 9	 Distance_2: 103 cm
+Distance_1: 2	 Distance_2: 102 cm
+Distance_1: 4	 Distance_2: 120 cm
+Distance_1: 8	 Distance_2: 132 cm
+Distance_1: 4	 Distance_2: 131 cm
+Distance_1: 129	 Distance_2: 131 cm
+Distance_1: 3	 Distance_2: 132 cm
+Distance_1: 2	 Distance_2: 131 cm
+Distance_1: 130	 Distance_2: 124 cm
+Distance_1: 1	 Distance_2: 131 cm
+Distance_1: 2	 Distance_2: 132 cm
+Distance_1: 132	 Distance_2: 132 cm
+Distance_1: 10	 Distance_2: 132 cm
+Distance_1: 44800	 Distance_2: 132 cm
+Distance_1: 132	 Distance_2: 133 cm
+Distance_1: 0	 Distance_2: 132 cm
+Distance_1: 128	 Distance_2: 132 cm
+Distance_1: 0	 Distance_2: 132 cm
+Distance_1: 0	 Distance_2: 133 cm
+Distance_1: 4	 Distance_2: 133 cm
+Distance_1: 5	 Distance_2: 133 cm
+Distance_1: 5	 Distance_2: 134 cm
+Distance_1: 6	 Distance_2: 134 cm
+Distance_1: 0	 Distance_2: 133 cm
+Distance_1: 5	 Distance_2: 134 cm
+Distance_1: 6	 Distance_2: 133 cm
+Distance_1: 4	 Distance_2: 134 cm
+Distance_1: 1	 Distance_2: 133 cm
+Distance_1: 2	 Distance_2: 134 cm
+Distance_1: 1	 Distance_2: 134 cm
+Distance_1: 132	 Distance_2: 133 cm
+Distance_1: 133	 Distance_2: 132 cm
+Distance_1: 133	 Distance_2: 133 cm
+Distance_1: 133	 Distance_2: 132 cm
+Distance_1: 133	 Distance_2: 133 cm
+Distance_1: 133	 Distance_2: 134 cm
+Distance_1: 133	 Distance_2: 134 cm
+Distance_1: 133	 Distance_2: 133 cm
+Distance_1: 133	 Distance_2: 133 cm
+Distance_1: 7	 Distance_2: 132 cm
+Distance_1: 0	 Distance_2: 133 cm
+Distance_1: 7	 Distance_2: 134 cm
+Distance_1: 1	 Distance_2: 133 cm
+Distance_1: 3	 Distance_2: 133 cm
+Distance_1: 132	 Distance_2: 133 cm
+Distance_1: 4	 Distance_2: 133 cm
+Distance_1: 0	 Distance_2: 133 cm
+Distance_1: 132	 Distance_2: 133 cm
+Distance_1: 2	 Distance_2: 133 cm
+Distance_1: 0	 Distance_2: 132 cm
+Distance_1: 5	 Distance_2: 134 cm
+Distance_1: 1	 Distance_2: 133 cm
+Distance_1: 2	 Distance_2: 134 cm
+Distance_1: 7	 Distance_2: 134 cm
+Distance_1: 6	 Distance_2: 134 cm
+Distance_1: 4	 Distance_2: 133 cm
+Distance_1: 5	 Distance_2: 134 cm
+Distance_1: 1	 Distance_2: 133 cm
+Distance_1: 8	 Distance_2: 135 cm
+Distance_1: 3	 Distance_2: 133 cm
+Distance_1: 2	 Distance_2: 133 cm
+Distance_1: 5	 Distance_2: 134 cm
+Distance_1: 6	 Distance_2: 133 cm
+Distance_1: 10	 Distance_2: 134 cm
+Distance_1: 4	 Distance_2: 134 cm
+Distance_1: 0	 Distance_2: 134 cm
+Distance_1: 1	 Distance_2: 46 cm
+Distance_1: 41	 Distance_2: 52 cm
+Distance_1: 39	 Distance_2: 47 cm
+Distance_1: 34	 Distance_2: 46 cm
+Distance_1: 48	 Distance_2: 134 cm
+Distance_1: 0	 Distance_2: 134 cm
+Distance_1: 0	 Distance_2: 132 cm
+Distance_1: 2	 Distance_2: 133 cm
+Distance_1: 1	 Distance_2: 134 cm
+Distance_1: 2	 Distance_2: 133 cm
+Distance_1: 2	 Distance_2: 133 cm
+Distance_1: 0	 Distance_2: 133 cm
+Distance_1: 6	 Distance_2: 133 cm
+Distance_1: 130	 Distance_2: 133 cm
+Distance_1: 129	 Distance_2: 133 cm
+Distance_1: 5	 Distance_2: 133 cm
+Distance_1: 0	 Distance_2: 133 cm
+Distance_1: 4	 Distance_2: 133 cm
+Distance_1: 1	 Distance_2: 133 cm
+Distance_1: 1	 Distance_2: 132 cm
+Distance_1: 0	 Distance_2: 125 cm
+Distance_1: 17	 Distance_2: 115 cm
+Distance_1: 4	 Distance_2: 115 cm
+Distance_1: 4	 Distance_2: 115 cm
+Distance_1: 20	 Distance_2: 115 cm
+Distance_1: 0	 Distance_2: 116 cm
+Distance_1: 115	 Distance_2: 116 cm
+Distance_1: 20	 Distance_2: 116 cm
+Distance_1: 32	 Distance_2: 115 cm
+Distance_1: 2	 Distance_2: 116 cm
+Distance_1: 18	 Distance_2: 115 cm
+Distance_1: 4	 Distance_2: 116 cm
+Distance_1: 17	 Distance_2: 116 cm
+Distance_1: 35	 Distance_2: 115 cm
+Distance_1: 4	 Distance_2: 34 cm
+Distance_1: 18	 Distance_2: 23 cm
+Distance_1: 21	 Distance_2: 23 cm
+Distance_1: 8	 Distance_2: 26 cm
+Distance_1: 24	 Distance_2: 27 cm
+Distance_1: 24	 Distance_2: 26 cm
+Distance_1: 24	 Distance_2: 24 cm
+Distance_1: 24	 Distance_2: 23 cm
+Distance_1: 8	 Distance_2: 22 cm
+Distance_1: 3	 Distance_2: 22 cm
+Distance_1: 26	 Distance_2: 23 cm
+Distance_1: 18	 Distance_2: 21 cm
+Distance_1: 20	 Distance_2: 21 cm
+Distance_1: 18	 Distance_2: 27 cm
+Distance_1: 28	 Distance_2: 29 cm
+Distance_1: 17	 Distance_2: 29 cm
+Distance_1: 24	 Distance_2: 31 cm
+Distance_1: 32	 Distance_2: 33 cm
+Distance_1: 1	 Distance_2: 34 cm
+Distance_1: 2	 Distance_2: 34 cm
+Distance_1: 2	 Distance_2: 34 cm
+Distance_1: 2	 Distance_2: 42 cm
+Distance_1: 0	 Distance_2: 116 cm
+Distance_1: 18	 Distance_2: 115 cm
+Distance_1: 0	 Distance_2: 115 cm
+Distance_1: 0	 Distance_2: 55 cm
+Distance_1: 0	 Distance_2: 37 cm
+Distance_1: 0	 Distance_2: 97 cm
+Distance_1: 0	 Distance_2: 107 cm
+Distance_1: 11	 Distance_2: 105 cm
+Distance_1: 10	 Distance_2: 102 cm
+Distance_1: 6	 Distance_2: 99 cm
+Distance_1: 1	 Distance_2: 96 cm
+Distance_1: 0	 Distance_2: 116 cm
+Distance_1: 4	 Distance_2: 116 cm
+Distance_1: 1	 Distance_2: 97 cm
+Distance_1: 4	 Distance_2: 30 cm
+Distance_1: 30	 Distance_2: 27 cm
+Distance_1: 24	 Distance_2: 17 cm
+Distance_1: 17	 Distance_2: 18 cm
+Distance_1: 17	 Distance_2: 18 cm
+Distance_1: 19	 Distance_2: 20 cm
+Distance_1: 19	 Distance_2: 21 cm
+Distance_1: 20	 Distance_2: 19 cm
+Distance_1: 19	 Distance_2: 14 cm
+Distance_1: 14	 Distance_2: 8 cm
+Distance_1: 15	 Distance_2: 8 cm
+Distance_1: 8	 Distance_2: 9 cm
+Distance_1: 10	 Distance_2: 9 cm
+Distance_1: 8	 Distance_2: 9 cm
+Distance_1: 9	 Distance_2: 28 cm
+Distance_1: 26	 Distance_2: 22 cm
+Distance_1: 24	 Distance_2: 28 cm
+Distance_1: 29	 Distance_2: 29 cm
+Distance_1: 29	 Distance_2: 22 cm
+Distance_1: 22	 Distance_2: 44820 cm
+Distance_1: 44820	 Distance_2: 44820 cm
+Distance_1: 44820	 Distance_2: 44820 cm
+Distance_1: 44820	 Distance_2: 44820 cm
+Distance_1: 44820	 Distance_2: 44820 cm
+Distance_1: 44820	 Distance_2: 44820 cm
+Distance_1: 44820	 Distance_2: 44820 cm
+Distance_1: 44820	 Distance_2: 44820 cm
+Distance_1: 44820	 Distance_2: 44820 cm
+Distance_1: 44820	 Distance_2: 44820 cm
+Distance_1: 44820	 Distance_2: 44820 cm
+Distance_1: 44820	 Distance_2: 44820 cm
+Distance_1: 44820	 Distance_2: 44820 cm
+Distance_1: 44820	 Distance_2: 44820 cm
+Distance_1: 44820	 Distance_2: 44820 cm
+Distance_1: 44820	 Distance_2: 44820 cm
+Distance_1: 44820	 Distance_2: 44820 cm
+Distance_1: 44820	 Distance_2: 44820 cm
+Distance_1: 44820	 Distance_2: 44820 cm
+Distance_1: 44820	 Distance_2: 44820 cm
+Distance_1: 44820	 Distance_2: 44820 cm
+Distance_1: 44820	 Distance_2: 44820 cm
+Distance_1: 44820	 Distance_2: 44820 cm
+Distance_1: 44820	 Distance_2: 44820 cm
+Distance_1: 44820	 Distance_2: 44820 cm
+Distance_1: 44820	 Distance_2: 44820 cm
+Distance_1: 44820	 Distance_2: 44820 cm
+Distance_1: 44820	 Distance_2: 44820 cm
+Distance_1: 44820	 Distance_2: 44820 cm
+Distance_1: 44820	 Distance_2: 44820 cm
+Distance_1: 44820	 Distance_2: 44820 cm
+Distance_1: 44820	 Distance_2: 44820 cm
+Distance_1: 44820	 Distance_2: 44820 cm
+Distance_1: 44820	 Distance_2: 44820 cm
+Distance_1: 44820	 Distance_2: 44820 cm
+Distance_1: 44820	 Distance_2: 44820 cm
+Distance_1: 44820	 Distance_2: 5 cm
+Distance_1: 5	 Distance_2: 44820 cm
+Distance_1: 44820	 Distance_2: 4 cm
+Distance_1: 4	 Distance_2: 44820 cm
+Distance_1: 44820	 Distance_2: 4 cm
+Distance_1: 3	 Distance_2: 5 cm
+Distance_1: 4	 Distance_2: 44820 cm
+Distance_1: 44820	 Distance_2: 44820 cm
+Distance_1: 44820	 Distance_2: 10 cm
+Distance_1: 17	 Distance_2: 30 cm
+Distance_1: 29	 Distance_2: 32 cm
+Distance_1: 34	 Distance_2: 34 cm
+Distance_1: 34	 Distance_2: 32 cm
+Distance_1: 32	 Distance_2: 31 cm
+Distance_1: 31	 Distance_2: 0 cm
+Distance_1: 0	 Distance_2: 9 cm
+Distance_1: 39	 Distance_2: 31 cm
+Distance_1: 26	 Distance_2: 35 cm
+Distance_1: 11	 Distance_2: 7 cm
+Distance_1: 1	 Distance_2: 317 cm
+Distance_1: 22	 Distance_2: 99 cm
+Distance_1: 2	 Distance_2: 7 cm
+Distance_1: 6	 Distance_2: 3 cm
+Distance_1: 2	 Distance_2: 4 cm
+Distance_1: 6	 Distance_2: 13 cm
+Distance_1: 14	 Distance_2: 15 cm
+Distance_1: 17	 Distance_2: 11 cm
+Distance_1: 11	 Distance_2: 5 cm
+Distance_1: 4	 Distance_2: 6 cm
+Distance_1: 6	 Distance_2: 8 cm
+Distance_1: 6	 Distance_2: 8 cm
+Distance_1: 9	 Distance_2: 8 cm
+Distance_1: 8	 Distance_2: 7 cm
+Distance_1: 7	 Distance_2: 9 cm
+Distance_1: 41	 Distance_2: 96 cm
+Distance_1: 97	 Distance_2: 103 cm
+Distance_1: 103	 Distance_2: 105 cm
+Distance_1: 105	 Distance_2: 104 cm
+Distance_1: 104	 Distance_2: 119 cm
+Distance_1: 119	 Distance_2: 35 cm
+Distance_1: 48	 Distance_2: 54 cm
+Distance_1: 54	 Distance_2: 37 cm
+Distance_1: 34	 Distance_2: 39 cm
+Distance_1: 40	 Distance_2: 40 cm
+Distance_1: 39	 Distance_2: 38 cm
+Distance_1: 38	 Distance_2: 38 cm
+Distance_1: 38	 Distance_2: 39 cm
+Distance_1: 39	 Distance_2: 38 cm
+Distance_1: 37	 Distance_2: 38 cm
+Distance_1: 38	 Distance_2: 38 cm
+Distance_1: 19	 Distance_2: 453 cm
+Distance_1: 614	 Distance_2: 9 cm
+Distance_1: 7	 Distance_2: 7 cm
+Distance_1: 7	 Distance_2: 8 cm
+Distance_1: 8	 Distance_2: 8 cm
+Distance_1: 8	 Distance_2: 8 cm
+Distance_1: 8	 Distance_2: 7 cm
+Distance_1: 8	 Distance_2: 8 cm
+Distance_1: 9	 Distance_2: 35 cm
+Distance_1: 37	 Distance_2: 35 cm
+Distance_1: 37	 Distance_2: 37 cm
+Distance_1: 35	 Distance_2: 121 cm
+Distance_1: 120	 Distance_2: 120 cm
+Distance_1: 121	 Distance_2: 121 cm
+Distance_1: 120	 Distance_2: 120 cm
+Distance_1: 120	 Distance_2: 120 cm
+Distance_1: 121	 Distance_2: 122 cm
+Distance_1: 120	 Distance_2: 121 cm
+Distance_1: 120	 Distance_2: 121 cm
+Distance_1: 121	 Distance_2: 120 cm
+Distance_1: 121	 Distance_2: 14 cm
+Distance_1: 13	 Distance_2: 13 cm
+Distance_1: 13	 Distance_2: 12 cm
+Distance_1: 13	 Distance_2: 14 cm
+Distance_1: 12	 Distance_2: 10 cm
+Distance_1: 9	 Distance_2: 45 cm
+Distance_1: 51	 Distance_2: 13 cm
+Distance_1: 6	 Distance_2: 67 cm
+Distance_1: 9	 Distance_2: 8 cm
+Distance_1: 9	 Distance_2: 87 cm
+Distance_1: 70	 Distance_2: 120 cm
+Distance_1: 119	 Distance_2: 119 cm
+Distance_1: 119	 Distance_2: 118 cm
+Distance_1: 118	 Distance_2: 119 cm
+Distance_1: 120	 Distance_2: 120 cm
+Distance_1: 120	 Distance_2: 54 cm
+Distance_1: 53	 Distance_2: 55 cm
+Distance_1: 55	 Distance_2: 63 cm
+Distance_1: 63	 Distance_2: 64 cm
+Distance_1: 63	 Distance_2: 61 cm
+Distance_1: 61	 Distance_2: 61 cm
+Distance_1: 61	 Distance_2: 55 cm
+Distance_1: 55	 Distance_2: 61 cm
+Distance_1: 61	 Distance_2: 55 cm
+Distance_1: 55	 Distance_2: 54 cm
+Distance_1: 54	 Distance_2: 55 cm
+Distance_1: 54	 Distance_2: 54 cm
+Distance_1: 54	 Distance_2: 54 cm
+Distance_1: 54	 Distance_2: 54 cm
+Distance_1: 54	 Distance_2: 54 cm
+Distance_1: 54	 Distance_2: 54 cm
+Distance_1: 54	 Distance_2: 54 cm
+Distance_1: 53	 Distance_2: 54 cm
+Distance_1: 54	 Distance_2: 55 cm
+Distance_1: 55	 Distance_2: 54 cm
+Distance_1: 55	 Distance_2: 55 cm
+Distance_1: 54	 Distance_2: 55 cm
+Distance_1: 54	 Distance_2: 54 cm
+Distance_1: 55	 Distance_2: 55 cm
+Distance_1: 54	 Distance_2: 55 cm
+Distance_1: 54	 Distance_2: 54 cm
+Distance_1: 54	 Distance_2: 54 cm
+Distance_1: 54	 Distance_2: 55 cm
+Distance_1: 55	 Distance_2: 54 cm
+Distance_1: 55	 Distance_2: 55 cm
+Distance_1: 55	 Distance_2: 54 cm
+Distance_1: 54	 Distance_2: 54 cm
+Distance_1: 54	 Distance_2: 54 cm
+Distance_1: 54	 Distance_2: 55 cm
+Distance_1: 54	 Distance_2: 54 cm
+Distance_1: 54	 Distance_2: 55 cm
+Distance_1: 54	 Distance_2: 52 cm
+Distance_1: 52	 Distance_2: 50 cm
+Distance_1: 52	 Distance_2: 51 cm
+Distance_1: 51	 Distance_2: 52 cm
+Distance_1: 51	 Distance_2: 49 cm
+Distance_1: 50	 Distance_2: 50 cm
+Distance_1: 50	 Distance_2: 50 cm
+Distance_1: 50	 Distance_2: 51 cm
+Distance_1: 51	 Distance_2: 50 cm
+Distance_1: 51	 Distance_2: 51 cm
+Distance_1: 50	 Distance_2: 50 cm
+Distance_1: 50	 Distance_2: 50 cm
+Distance_1: 50	 Distance_2: 50 cm
+Distance_1: 50	 Distance_2: 50 cm
+Distance_1: 51	 Distance_2: 51 cm
+Distance_1: 50	 Distance_2: 50 cm
+Distance_1: 50	 Distance_2: 50 cm
+Distance_1: 50	 Distance_2: 50 cm
+Distance_1: 50	 Distance_2: 50 cm
+Distance_1: 50	 Distance_2: 48 cm
+Distance_1: 47	 Distance_2: 46 cm
+Distance_1: 45	 Distance_2: 46 cm
+Distance_1: 46	 Distance_2: 47 cm
+Distance_1: 47	 Distance_2: 49 cm
+Distance_1: 48	 Distance_2: 48 cm
+Distance_1: 48	 Distance_2: 48 cm
+Distance_1: 48	 Distance_2: 48 cm
+Distance_1: 48	 Distance_2: 48 cm
+Distance_1: 49	 Distance_2: 48 cm
+Distance_1: 47	 Distance_2: 48 cm
+Distance_1: 48	 Distance_2: 49 cm
+Distance_1: 48	 Distance_2: 49 cm
+Distance_1: 48	 Distance_2: 48 cm
+Distance_1: 48	 Distance_2: 47 cm
+Distance_1: 47	 Distance_2: 47 cm
+Distance_1: 46	 Distance_2: 46 cm
+Distance_1: 47	 Distance_2: 47 cm
+Distance_1: 44822	 Distance_2: 48 cm
+Distance_1: 48	 Distance_2: 47 cm
+Distance_1: 47	 Distance_2: 47 cm
+Distance_1: 46	 Distance_2: 46 cm
+Distance_1: 47	 Distance_2: 46 cm
+Distance_1: 46	 Distance_2: 46 cm
+Distance_1: 46	 Distance_2: 46 cm
+Distance_1: 46	 Distance_2: 46 cm
+Distance_1: 46	 Distance_2: 46 cm
+Distance_1: 45	 Distance_2: 46 cm
+Distance_1: 46	 Distance_2: 46 cm
+Distance_1: 46	 Distance_2: 46 cm
+Distance_1: 45	 Distance_2: 47 cm
+Distance_1: 46	 Distance_2: 48 cm
+Distance_1: 47	 Distance_2: 47 cm
+Distance_1: 47	 Distance_2: 46 cm
+Distance_1: 46	 Distance_2: 46 cm
+Distance_1: 47	 Distance_2: 48 cm
+Distance_1: 47	 Distance_2: 48 cm
+Distance_1: 47	 Distance_2: 47 cm
+Distance_1: 47	 Distance_2: 47 cm
+Distance_1: 47	 Distance_2: 48 cm
+Distance_1: 49	 Distance_2: 48 cm
+Distance_1: 17	 Distance_2: 49 cm
+Distance_1: 16	 Distance_2: 50 cm
+Distance_1: 48	 Distance_2: 13 cm
+Distance_1: 12	 Distance_2: 12 cm
+Distance_1: 9	 Distance_2: 11 cm
+Distance_1: 1	 Distance_2: 12 cm
+Distance_1: 2	 Distance_2: 12 cm
+Distance_1: 9	 Distance_2: 11 cm
+Distance_1: 2	 Distance_2: 11 cm
+Distance_1: 16	 Distance_2: 11 cm
+Distance_1: 2	 Distance_2: 12 cm
+Distance_1: 10	 Distance_2: 11 cm
+Distance_1: 9	 Distance_2: 11 cm
+Distance_1: 14	 Distance_2: 14 cm
+Distance_1: 40	 Distance_2: 43 cm
+Distance_1: 33	 Distance_2: 46 cm
+Distance_1: 33	 Distance_2: 52 cm
+Distance_1: 32	 Distance_2: 46 cm
+Distance_1: 4	 Distance_2: 45 cm
+Distance_1: 1	 Distance_2: 41 cm
+Distance_1: 0	 Distance_2: 41 cm
+Distance_1: 1	 Distance_2: 41 cm
+Distance_1: 0	 Distance_2: 41 cm
+Distance_1: 1	 Distance_2: 42 cm
+Distance_1: 1	 Distance_2: 40 cm
+Distance_1: 0	 Distance_2: 41 cm
+Distance_1: 0	 Distance_2: 41 cm
+Distance_1: 2	 Distance_2: 42 cm
+Distance_1: 1	 Distance_2: 41 cm
+Distance_1: 1	 Distance_2: 41 cm
+Distance_1: 1	 Distance_2: 42 cm
+Distance_1: 0	 Distance_2: 41 cm
+Distance_1: 4	 Distance_2: 41 cm
+Distance_1: 0	 Distance_2: 41 cm
+Distance_1: 0	 Distance_2: 42 cm
+Distance_1: 0	 Distance_2: 41 cm
+Distance_1: 0	 Distance_2: 41 cm
+Distance_1: 2	 Distance_2: 41 cm
+Distance_1: 1	 Distance_2: 41 cm
+Distance_1: 34	 Distance_2: 42 cm
+Distance_1: 41	 Distance_2: 42 cm
+Distance_1: 8	 Distance_2: 41 cm
+Distance_1: 2	 Distance_2: 42 cm
+Distance_1: 9	 Distance_2: 43 cm
+Distance_1: 36	 Distance_2: 43 cm
+Distance_1: 35	 Distance_2: 42 cm
+Distance_1: 34	 Distance_2: 42 cm
+Distance_1: 35	 Distance_2: 42 cm
+Distance_1: 8	 Distance_2: 42 cm
+Distance_1: 10	 Distance_2: 42 cm
+Distance_1: 10	 Distance_2: 42 cm
+Distance_1: 32	 Distance_2: 42 cm
+Distance_1: 36	 Distance_2: 42 cm
+Distance_1: 36	 Distance_2: 43 cm
+Distance_1: 32	 Distance_2: 42 cm
+Distance_1: 33	 Distance_2: 42 cm
+Distance_1: 35	 Distance_2: 42 cm
+Distance_1: 37	 Distance_2: 41 cm
+Distance_1: 0	 Distance_2: 42 cm
+Distance_1: 10	 Distance_2: 42 cm
+Distance_1: 0	 Distance_2: 45 cm
+Distance_1: 8	 Distance_2: 55 cm
+Distance_1: 22	 Distance_2: 66 cm
+Distance_1: 65	 Distance_2: 67 cm
+Distance_1: 2	 Distance_2: 65 cm
+Distance_1: 64	 Distance_2: 66 cm
+Distance_1: 2	 Distance_2: 116 cm
+Distance_1: 84	 Distance_2: 118 cm
+Distance_1: 103	 Distance_2: 118 cm
+Distance_1: 38	 Distance_2: 118 cm
+Distance_1: 116	 Distance_2: 117 cm
+Distance_1: 32	 Distance_2: 116 cm
+Distance_1: 112	 Distance_2: 118 cm
+Distance_1: 115	 Distance_2: 116 cm
+Distance_1: 112	 Distance_2: 117 cm
+Distance_1: 0	 Distance_2: 117 cm
+Distance_1: 114	 Distance_2: 117 cm
+Distance_1: 1	 Distance_2: 117 cm
+Distance_1: 54	 Distance_2: 117 cm
+Distance_1: 66	 Distance_2: 117 cm
+Distance_1: 116	 Distance_2: 117 cm
+Distance_1: 117	 Distance_2: 117 cm
+Distance_1: 1	 Distance_2: 118 cm
+Distance_1: 100	 Distance_2: 118 cm
+Distance_1: 0	 Distance_2: 118 cm
+Distance_1: 97	 Distance_2: 117 cm
+Distance_1: 18	 Distance_2: 118 cm
+Distance_1: 116	 Distance_2: 118 cm
+Distance_1: 113	 Distance_2: 117 cm
+Distance_1: 118	 Distance_2: 117 cm
+Distance_1: 118	 Distance_2: 117 cm
+Distance_1: 116	 Distance_2: 117 cm
+Distance_1: 112	 Distance_2: 119 cm
+Distance_1: 16	 Distance_2: 117 cm
+Distance_1: 118	 Distance_2: 117 cm
+Distance_1: 97	 Distance_2: 118 cm
+Distance_1: 16	 Distance_2: 118 cm
+Distance_1: 116	 Distance_2: 118 cm
+Distance_1: 98	 Distance_2: 118 cm
+Distance_1: 112	 Distance_2: 118 cm
+Distance_1: 114	 Distance_2: 118 cm
+Distance_1: 2	 Distance_2: 118 cm
+Distance_1: 100	 Distance_2: 119 cm
+Distance_1: 0	 Distance_2: 117 cm
+Distance_1: 36	 Distance_2: 119 cm
+Distance_1: 2	 Distance_2: 119 cm
+Distance_1: 17	 Distance_2: 119 cm
+Distance_1: 0	 Distance_2: 119 cm
+Distance_1: 80	 Distance_2: 118 cm
+Distance_1: 81	 Distance_2: 119 cm
+Distance_1: 65	 Distance_2: 119 cm
+Distance_1: 82	 Distance_2: 118 cm
+Distance_1: 4	 Distance_2: 119 cm
+Distance_1: 116	 Distance_2: 118 cm
+Distance_1: 18	 Distance_2: 117 cm
+Distance_1: 35	 Distance_2: 119 cm
+Distance_1: 4	 Distance_2: 118 cm
+Distance_1: 118	 Distance_2: 118 cm
+Distance_1: 115	 Distance_2: 118 cm
+Distance_1: 22	 Distance_2: 118 cm
+Distance_1: 97	 Distance_2: 104 cm
+Distance_1: 32	 Distance_2: 111 cm
+Distance_1: 0	 Distance_2: 119 cm
+Distance_1: 2	 Distance_2: 117 cm
+Distance_1: 0	 Distance_2: 119 cm
+Distance_1: 1	 Distance_2: 117 cm
+Distance_1: 2	 Distance_2: 117 cm
+Distance_1: 21	 Distance_2: 117 cm
+Distance_1: 16	 Distance_2: 116 cm
+Distance_1: 21	 Distance_2: 118 cm
+Distance_1: 16	 Distance_2: 117 cm
+Distance_1: 4	 Distance_2: 117 cm
+Distance_1: 16	 Distance_2: 118 cm
+Distance_1: 1	 Distance_2: 117 cm
+Distance_1: 4	 Distance_2: 117 cm
+Distance_1: 1	 Distance_2: 118 cm
+Distance_1: 0	 Distance_2: 117 cm
+Distance_1: 0	 Distance_2: 118 cm
+Distance_1: 8	 Distance_2: 117 cm
+Distance_1: 33	 Distance_2: 12 cm
+Distance_1: 0	 Distance_2: 11 cm
+Distance_1: 11	 Distance_2: 11 cm
+Distance_1: 10	 Distance_2: 11 cm
+Distance_1: 0	 Distance_2: 9 cm
+Distance_1: 8	 Distance_2: 6 cm
+Distance_1: 6	 Distance_2: 6 cm
+Distance_1: 6	 Distance_2: 4 cm
+Distance_1: 3	 Distance_2: 3 cm
+Distance_1: 1	 Distance_2: 118 cm
+Distance_1: 38	 Distance_2: 117 cm
+Distance_1: 20	 Distance_2: 118 cm
+Distance_1: 101	 Distance_2: 117 cm
+Distance_1: 115	 Distance_2: 118 cm
+Distance_1: 86	 Distance_2: 119 cm
+Distance_1: 102	 Distance_2: 118 cm
+Distance_1: 6	 Distance_2: 119 cm
+Distance_1: 4	 Distance_2: 118 cm
+Distance_1: 4	 Distance_2: 117 cm
+Distance_1: 5	 Distance_2: 118 cm
+Distance_1: 100	 Distance_2: 117 cm
+Distance_1: 0	 Distance_2: 119 cm
+Distance_1: 50	 Distance_2: 117 cm
+Distance_1: 96	 Distance_2: 116 cm
+Distance_1: 113	 Distance_2: 116 cm
+Distance_1: 112	 Distance_2: 116 cm
+Distance_1: 51	 Distance_2: 116 cm
+Distance_1: 36	 Distance_2: 115 cm
+Distance_1: 64	 Distance_2: 117 cm
+Distance_1: 52	 Distance_2: 116 cm
+Distance_1: 80	 Distance_2: 116 cm
+Distance_1: 17	 Distance_2: 116 cm
+Distance_1: 84	 Distance_2: 73 cm
+Distance_1: 64	 Distance_2: 119 cm
+Distance_1: 23	 Distance_2: 120 cm
+Distance_1: 16	 Distance_2: 118 cm
+Distance_1: 22	 Distance_2: 119 cm
+Distance_1: 22	 Distance_2: 118 cm
+Distance_1: 22	 Distance_2: 119 cm
+Distance_1: 8	 Distance_2: 119 cm
+Distance_1: 0	 Distance_2: 119 cm
+Distance_1: 6	 Distance_2: 119 cm
+Distance_1: 18	 Distance_2: 119 cm
+Distance_1: 18	 Distance_2: 119 cm
+Distance_1: 20	 Distance_2: 119 cm
+Distance_1: 21	 Distance_2: 119 cm
+Distance_1: 21	 Distance_2: 119 cm
+Distance_1: 22	 Distance_2: 66 cm
+Distance_1: 64	 Distance_2: 63 cm
+Distance_1: 5	 Distance_2: 66 cm
+Distance_1: 1	 Distance_2: 66 cm
+Distance_1: 0	 Distance_2: 67 cm
+Distance_1: 0	 Distance_2: 66 cm
+Distance_1: 0	 Distance_2: 66 cm
+Distance_1: 1	 Distance_2: 66 cm
+Distance_1: 0	 Distance_2: 65 cm
+Distance_1: 65	 Distance_2: 51 cm
+Distance_1: 51	 Distance_2: 52 cm
+Distance_1: 52	 Distance_2: 51 cm
+Distance_1: 52	 Distance_2: 49 cm
+Distance_1: 48	 Distance_2: 10 cm
+Distance_1: 12	 Distance_2: 9 cm
+Distance_1: 11	 Distance_2: 3 cm
+Distance_1: 4	 Distance_2: 10 cm
+Distance_1: 11	 Distance_2: 10 cm
+Distance_1: 10	 Distance_2: 9 cm
+Distance_1: 8	 Distance_2: 3 cm
+Distance_1: 39	 Distance_2: 20 cm
+Distance_1: 24	 Distance_2: 87 cm
+Distance_1: 85	 Distance_2: 96 cm
+Distance_1: 93	 Distance_2: 63 cm
+Distance_1: 54	 Distance_2: 46 cm
+Distance_1: 46	 Distance_2: 45 cm
+Distance_1: 45	 Distance_2: 98 cm
+Distance_1: 96	 Distance_2: 29 cm
+Distance_1: 34	 Distance_2: 55 cm
+Distance_1: 44800	 Distance_2: 10 cm
+Distance_1: 4	 Distance_2: 18 cm
+Distance_1: 2	 Distance_2: 2 cm
+Distance_1: 4	 Distance_2: 1 cm
+Distance_1: 0	 Distance_2: 1 cm
+Distance_1: 0	 Distance_2: 6 cm
+Distance_1: 1	 Distance_2: 8 cm
+Distance_1: 8	 Distance_2: 6 cm
+Distance_1: 3	 Distance_2: 31 cm
+Distance_1: 16	 Distance_2: 31 cm
+Distance_1: 0	 Distance_2: 32 cm
+Distance_1: 0	 Distance_2: 33 cm
+Distance_1: 1	 Distance_2: 32 cm
+Distance_1: 6	 Distance_2: 31 cm
+Distance_1: 5	 Distance_2: 5 cm
+Distance_1: 2	 Distance_2: 18 cm
+Distance_1: 16	 Distance_2: 18 cm
+Distance_1: 1	 Distance_2: 19 cm
+Distance_1: 2	 Distance_2: 18 cm
+Distance_1: 2	 Distance_2: 15 cm
+Distance_1: 8	 Distance_2: 70 cm
+Distance_1: 5	 Distance_2: 71 cm
+Distance_1: 2	 Distance_2: 70 cm
+Distance_1: 0	 Distance_2: 70 cm
+Distance_1: 2	 Distance_2: 70 cm
+Distance_1: 2	 Distance_2: 71 cm
+Distance_1: 8	 Distance_2: 70 cm
+Distance_1: 8	 Distance_2: 55 cm
+Distance_1: 3	 Distance_2: 70 cm
+Distance_1: 2	 Distance_2: 70 cm
+Distance_1: 0	 Distance_2: 28 cm
+Distance_1: 4	 Distance_2: 67 cm
+Distance_1: 2	 Distance_2: 70 cm
+Distance_1: 6	 Distance_2: 21 cm
+Distance_1: 2	 Distance_2: 21 cm
+Distance_1: 10	 Distance_2: 62 cm
+Distance_1: 2	 Distance_2: 70 cm
+Distance_1: 4	 Distance_2: 71 cm
+Distance_1: 3	 Distance_2: 69 cm
+Distance_1: 2	 Distance_2: 67 cm
+Distance_1: 5	 Distance_2: 68 cm
+Distance_1: 1	 Distance_2: 68 cm
+Distance_1: 5	 Distance_2: 69 cm
+Distance_1: 4	 Distance_2: 67 cm
+Distance_1: 1	 Distance_2: 67 cm
+Distance_1: 2	 Distance_2: 63 cm
+Distance_1: 22	 Distance_2: 63 cm
+Distance_1: 2	 Distance_2: 65 cm
+Distance_1: 0	 Distance_2: 67 cm
+Distance_1: 1	 Distance_2: 68 cm
+Distance_1: 4	 Distance_2: 67 cm
+Distance_1: 0	 Distance_2: 68 cm
+Distance_1: 0	 Distance_2: 68 cm
+Distance_1: 0	 Distance_2: 68 cm
+Distance_1: 0	 Distance_2: 66 cm
+Distance_1: 0	 Distance_2: 62 cm
+Distance_1: 6	 Distance_2: 67 cm
+Distance_1: 6	 Distance_2: 67 cm
+Distance_1: 2	 Distance_2: 67 cm
+Distance_1: 2	 Distance_2: 67 cm
+Distance_1: 3	 Distance_2: 67 cm
+Distance_1: 64	 Distance_2: 66 cm
+Distance_1: 64	 Distance_2: 67 cm
+Distance_1: 67	 Distance_2: 67 cm
+Distance_1: 2	 Distance_2: 66 cm
+Distance_1: 64	 Distance_2: 66 cm
+Distance_1: 68	 Distance_2: 67 cm
+Distance_1: 64	 Distance_2: 67 cm
+Distance_1: 64	 Distance_2: 67 cm
+Distance_1: 65	 Distance_2: 67 cm
+Distance_1: 66	 Distance_2: 66 cm
+Distance_1: 64	 Distance_2: 66 cm
+Distance_1: 66	 Distance_2: 66 cm
+Distance_1: 65	 Distance_2: 65 cm
+Distance_1: 64	 Distance_2: 20 cm
+Distance_1: 20	 Distance_2: 45 cm
+Distance_1: 41	 Distance_2: 42 cm
+Distance_1: 41	 Distance_2: 18 cm
+Distance_1: 16	 Distance_2: 15 cm

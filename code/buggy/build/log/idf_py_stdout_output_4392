@@ -1,0 +1,1250 @@
+016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15532
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (29) boot: ESP-IDF v5.2-dirty 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Apr 17 2024 19:06:56[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v1.0[0m
+[0;32mI (37) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (42) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (46) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (60) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (67) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (82) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (94) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=23d88h (146824) map[0m
+[0;32mI (153) esp_image: segment 1: paddr=00033db0 vaddr=3ffb0000 size=03bech ( 15340) load[0m
+[0;32mI (159) esp_image: segment 2: paddr=000379a4 vaddr=40080000 size=08674h ( 34420) load[0m
+[0;32mI (172) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=7b61ch (505372) map[0m
+[0;32mI (346) esp_image: segment 4: paddr=000bb644 vaddr=40088674 size=0e0c4h ( 57540) load[0m
+[0;32mI (380) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (380) boot: Disabling RNG early entropy source...[0m
+[0;32mI (391) cpu_start: Multicore app[0m
+[0;32mI (400) cpu_start: Pro cpu start user code[0m
+[0;32mI (400) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (400) cpu_start: Application information:[0m
+[0;32mI (403) cpu_start: Project name:     main[0m
+[0;32mI (408) cpu_start: App version:      b6da4d5-dirty[0m
+[0;32mI (413) cpu_start: Compile time:     Apr 17 2024 21:43:16[0m
+[0;32mI (419) cpu_start: ELF file SHA256:  61acc57e9...[0m
+[0;32mI (425) cpu_start: ESP-IDF:          v5.2-dirty[0m
+[0;32mI (430) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (435) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (439) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (444) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (452) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (457) heap_init: At 3FFB7CF8 len 00028308 (160 KiB): DRAM[0m
+[0;32mI (464) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (470) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (477) heap_init: At 40096738 len 000098C8 (38 KiB): IRAM[0m
+[0;32mI (484) spi_flash: detected chip: generic[0m
+[0;32mI (487) spi_flash: flash io: dio[0m
+[0;33mW (491) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (505) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;33mW (515) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (524) main_task: Started on CPU0[0m
+[0;32mI (534) main_task: Calling app_main()[0m
+I (594) wifi:wifi driver task: 3ffbfde8, prio:23, stack:6656, core=0
+I (614) wifi:wifi firmware version: cc1dd81
+I (624) wifi:wifi certification version: v7.0
+I (624) wifi:config NVS flash: enabled
+I (624) wifi:config nano formating: disabled
+I (624) wifi:Init data frame dynamic rx buffer num: 32
+I (624) wifi:Init static rx mgmt buffer num: 5
+I (634) wifi:Init management short buffer num: 32
+I (634) wifi:Init dynamic tx buffer num: 32
+I (644) wifi:Init static rx buffer size: 1600
+I (644) wifi:Init static rx buffer num: 10
+I (644) wifi:Init dynamic rx buffer num: 32
+[0;32mI (654) wifi_init: rx ba win: 6[0m
+[0;32mI (654) wifi_init: tcpip mbox: 32[0m
+[0;32mI (664) wifi_init: udp mbox: 6[0m
+[0;32mI (664) wifi_init: tcp mbox: 6[0m
+[0;32mI (664) wifi_init: tcp tx win: 5760[0m
+[0;32mI (674) wifi_init: tcp rx win: 5760[0m
+[0;32mI (674) wifi_init: tcp mss: 1440[0m
+[0;32mI (684) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (684) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (694) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (774) wifi:mode : sta (fc:f5:c4:16:27:98)
+I (774) wifi:enable tsf
+[0;32mI (774) example: wifi_init_sta finished.[0m
+I (784) wifi:new:<5,1>, old:<1,0>, ap:<255,255>, sta:<5,1>, prof:1
+I (794) wifi:state: init -> auth (b0)
+I (794) wifi:state: auth -> assoc (0)
+I (804) wifi:state: assoc -> run (10)
+I (804) wifi:<ba-add>idx:0 (ifx:0, 30:23:03:c7:9f:8c), tid:0, ssn:0, winSize:64
+I (824) wifi:connected with Group_5, aid = 3, channel 5, 40U, bssid = 30:23:03:c7:9f:8c
+I (824) wifi:security: WPA2-PSK, phy: bgn, rssi: -54
+I (834) wifi:pm start, type: 1
+
+I (834) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (854) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (3344) esp_netif_handlers: sta ip: 192.168.1.38, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (3344) example: got ip:192.168.1.38[0m
+[0;32mI (3344) example: connected to ap SSID:Group_5 password:smartsys[0m
+[0;32mI (3354) example: Create timer and operator[0m
+[0;32mI (3354) example: Connect timer and operator[0m
+[0;32mI (3364) example: Create comparator and generator from the operator[0m
+[0;32mI (3364) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (3374) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (3384) example: Set generator action on timer and compare event[0m
+[0;32mI (3394) example: Enable and start timer[0m
+[0;32mI (7894) example: Message sent to server[0m
+[0;32mI (8034) example: Received message from server: -1 or -1[0m
+[0;32mI (8034) example: Message sent to server[0m
+[0;32mI (8134) example: Received message from server: -1 or -1[0m
+[0;32mI (8134) example: Message sent to server[0m
+[0;32mI (8234) example: Received message from server: -1 or -1[0m
+[0;32mI (8234) example: Message sent to server[0m
+[0;32mI (8334) example: Received message from server: -1 or -1[0m
+[0;32mI (8334) example: Message sent to server[0m
+[0;32mI (8544) example: Received message from server: -1 or -1[0m
+[0;32mI (8544) example: Message sent to server[0m
+[0;32mI (8644) example: Received message from server: -1 or -1[0m
+[0;32mI (8644) example: Message sent to server[0m
+[0;32mI (8744) example: Received message from server: -1 or -1[0m
+[0;32mI (8744) example: Message sent to server[0m
+[0;32mI (8844) example: Received message from server: -1 or -1[0m
+[0;32mI (8844) example: Message sent to server[0m
+[0;32mI (8944) example: Received message from server: -1 or -1[0m
+[0;32mI (8944) example: Message sent to server[0m
+[0;32mI (9044) example: Received message from server: -1 or -1[0m
+[0;32mI (9044) example: Message sent to server[0m
+[0;32mI (9254) example: Received message from server: -1 or -1[0m
+[0;32mI (9264) example: Message sent to server[0m
+[0;32mI (9364) example: Received message from server: -1 or -1[0m
+[0;32mI (9364) example: Message sent to server[0m
+[0;32mI (9464) example: Received message from server: -1 or -1[0m
+[0;32mI (9464) example: Message sent to server[0m
+[0;32mI (9564) example: Received message from server: -1 or -1[0m
+[0;32mI (9564) example: Message sent to server[0m
+[0;32mI (9664) example: Received message from server: -1 or -1[0m
+[0;32mI (9664) example: Message sent to server[0m
+[0;32mI (9764) example: Received message from server: -1 or -1[0m
+[0;32mI (9764) example: Message sent to server[0m
+[0;32mI (9864) example: Received message from server: -1 or -1[0m
+[0;32mI (9864) example: Message sent to server[0m
+[0;32mI (9964) example: Received message from server: -1 or -1[0m
+[0;32mI (9964) example: Message sent to server[0m
+[0;32mI (10064) example: Received message from server: -1 or -1[0m
+[0;32mI (10064) example: Message sent to server[0m
+[0;32mI (10164) example: Received message from server: -1 or -1[0m
+[0;32mI (10164) example: Message sent to server[0m
+[0;32mI (10264) example: Received message from server: -1 or -1[0m
+[0;32mI (10264) example: Message sent to server[0m
+[0;32mI (10364) example: Received message from server: -1 or -1[0m
+[0;32mI (10364) example: Message sent to server[0m
+[0;32mI (10464) example: Received message from server: -1 or -1[0m
+[0;32mI (10464) example: Message sent to server[0m
+[0;32mI (10564) example: Received message from server: -1 or -1[0m
+[0;32mI (10564) example: Message sent to server[0m
+[0;32mI (10664) example: Received message from server: -1 or -1[0m
+[0;32mI (10664) example: Message sent to server[0m
+[0;32mI (10764) example: Received message from server: -1 or -1[0m
+[0;32mI (10764) example: Message sent to server[0m
+[0;32mI (10864) example: Received message from server: -1 or -1[0m
+[0;32mI (10864) example: Message sent to server[0m
+[0;32mI (10894) main_task: Returned from app_main()[0m
+[0;32mI (10964) example: Received message from server: -1 or -1[0m
+[0;32mI (10964) example: Message sent to server[0m
+[0;32mI (11064) example: Received message from server: -1 or -1[0m
+[0;32mI (11064) example: Message sent to server[0m
+[0;32mI (11164) example: Received message from server: -1 or -1[0m
+[0;32mI (11164) example: Message sent to server[0m
+[0;32mI (11264) example: Received message from server: -1 or -1[0m
+[0;32mI (11264) example: Message sent to server[0m
+[0;32mI (11364) example: Received message from server: -1 or -1[0m
+[0;32mI (11364) example: Message sent to server[0m
+[0;32mI (11464) example: Received message from server: -1 or -1[0m
+[0;32mI (11464) example: Message sent to server[0m
+[0;32mI (11564) example: Received message from server: -1 or -1[0m
+[0;32mI (11564) example: Message sent to server[0m
+[0;32mI (11664) example: Received message from server: -1 or -1[0m
+[0;32mI (11664) example: Message sent to server[0m
+[0;32mI (11764) example: Received message from server: -1 or -1[0m
+[0;32mI (11764) example: Message sent to server[0m
+[0;32mI (11864) example: Received message from server: -1 or -1[0m
+[0;32mI (11864) example: Message sent to server[0m
+[0;32mI (11964) example: Received message from server: -1 or -1[0m
+[0;32mI (11964) example: Message sent to server[0m
+[0;32mI (12064) example: Received message from server: -1 or -1[0m
+[0;32mI (12064) example: Message sent to server[0m
+[0;32mI (12164) example: Received message from server: -1 or -1[0m
+[0;32mI (12164) example: Message sent to server[0m
+[0;32mI (12264) example: Received message from server: -1 or -1[0m
+[0;32mI (12264) example: Message sent to server[0m
+[0;32mI (12364) example: Received message from server: -1 or -1[0m
+[0;32mI (12364) example: Message sent to server[0m
+[0;32mI (12464) example: Received message from server: -1 or -1[0m
+[0;32mI (12464) example: Message sent to server[0m
+[0;32mI (12564) example: Received message from server: -1 or -1[0m
+[0;32mI (12564) example: Message sent to server[0m
+[0;32mI (12664) example: Received message from server: -1 or -1[0m
+[0;32mI (12664) example: Message sent to server[0m
+[0;32mI (12764) example: Received message from server: -1 or -1[0m
+[0;32mI (12764) example: Message sent to server[0m
+[0;32mI (12864) example: Received message from server: -1 or -1[0m
+[0;32mI (12864) example: Message sent to server[0m
+[0;32mI (12964) example: Received message from server: -1 or -1[0m
+[0;32mI (12964) example: Message sent to server[0m
+[0;32mI (13064) example: Received message from server: -1 or -1[0m
+[0;32mI (13064) example: Message sent to server[0m
+[0;32mI (13164) example: Received message from server: -1 or -1[0m
+[0;32mI (13164) example: Message sent to server[0m
+[0;32mI (13264) example: Received message from server: -1 or -1[0m
+[0;32mI (13264) example: Message sent to server[0m
+[0;32mI (13364) example: Received message from server: -1 or -1[0m
+[0;32mI (13364) example: Message sent to server[0m
+[0;32mI (13464) example: Received message from server: -1 or -1[0m
+[0;32mI (13464) example: Message sent to server[0m
+[0;32mI (13564) example: Received message from server: -1 or -1[0m
+[0;32mI (13564) example: Message sent to server[0m
+[0;32mI (13664) example: Received message from server: -1 or -1[0m
+[0;32mI (13664) example: Message sent to server[0m
+[0;32mI (13764) example: Received message from server: -1 or -1[0m
+[0;32mI (13764) example: Message sent to server[0m
+[0;32mI (13864) example: Received message from server: -1 or -1[0m
+[0;32mI (13864) example: Message sent to server[0m
+[0;32mI (13964) example: Received message from server: -1 or -1[0m
+[0;32mI (13964) example: Message sent to server[0m
+[0;32mI (14064) example: Received message from server: -1 or -1[0m
+[0;32mI (14064) example: Message sent to server[0m
+[0;32mI (14164) example: Received message from server: -1 or -1[0m
+[0;32mI (14164) example: Message sent to server[0m
+[0;32mI (14264) example: Received message from server: -1 or -1[0m
+[0;32mI (14264) example: Message sent to server[0m
+[0;32mI (14364) example: Received message from server: -1 or -1[0m
+[0;32mI (14364) example: Message sent to server[0m
+[0;32mI (14464) example: Received message from server: -1 or -1[0m
+[0;32mI (14464) example: Message sent to server[0m
+[0;32mI (14564) example: Received message from server: -1 or -1[0m
+[0;32mI (14564) example: Message sent to server[0m
+[0;32mI (14664) example: Received message from server: -1 or -1[0m
+[0;32mI (14664) example: Message sent to server[0m
+[0;32mI (14764) example: Received message from server: -1 or -1[0m
+[0;32mI (14764) example: Message sent to server[0m
+[0;32mI (14864) example: Received message from server: -1 or -1[0m
+[0;32mI (14864) example: Message sent to server[0m
+[0;32mI (14964) example: Received message from server: -1 or -1[0m
+[0;32mI (14964) example: Message sent to server[0m
+[0;32mI (15064) example: Received message from server: -1 or -1[0m
+[0;32mI (15064) example: Message sent to server[0m
+[0;32mI (15164) example: Received message from server: -1 or -1[0m
+[0;32mI (15164) example: Message sent to server[0m
+[0;32mI (15264) example: Received message from server: -1 or -1[0m
+[0;32mI (15264) example: Message sent to server[0m
+[0;32mI (15364) example: Received message from server: -1 or -1[0m
+[0;32mI (15364) example: Message sent to server[0m
+[0;32mI (15464) example: Received message from server: -1 or -1[0m
+[0;32mI (15464) example: Message sent to server[0m
+[0;32mI (15564) example: Received message from server: -1 or -1[0m
+[0;32mI (15564) example: Message sent to server[0m
+[0;32mI (15664) example: Received message from server: -1 or -1[0m
+[0;32mI (15664) example: Message sent to server[0m
+[0;32mI (15764) example: Received message from server: -1 or -1[0m
+[0;32mI (15764) example: Message sent to server[0m
+[0;32mI (15864) example: Received message from server: -1 or -1[0m
+[0;32mI (15864) example: Message sent to server[0m
+[0;32mI (15964) example: Received message from server: -1 or -1[0m
+[0;32mI (15964) example: Message sent to server[0m
+[0;32mI (16064) example: Received message from server: -1 or -1[0m
+[0;32mI (16064) example: Message sent to server[0m
+[0;32mI (16164) example: Received message from server: -1 or -1[0m
+[0;32mI (16164) example: Message sent to server[0m
+[0;32mI (16264) example: Received message from server: -1 or -1[0m
+[0;32mI (16264) example: Message sent to server[0m
+[0;32mI (16364) example: Received message from server: -1 or -1[0m
+[0;32mI (16364) example: Message sent to server[0m
+[0;32mI (16464) example: Received message from server: -1 or -1[0m
+[0;32mI (16464) example: Message sent to server[0m
+[0;32mI (16564) example: Received message from server: -1 or -1[0m
+[0;32mI (16564) example: Message sent to server[0m
+[0;32mI (16664) example: Received message from server: -1 or -1[0m
+[0;32mI (16664) example: Message sent to server[0m
+[0;32mI (16764) example: Received message from server: -1 or -1[0m
+[0;32mI (16764) example: Message sent to server[0m
+[0;32mI (16864) example: Received message from server: -1 or -1[0m
+[0;32mI (16864) example: Message sent to server[0m
+[0;32mI (16964) example: Received message from server: -1 or -1[0m
+[0;32mI (16964) example: Message sent to server[0m
+[0;32mI (17064) example: Received message from server: -1 or -1[0m
+[0;32mI (17064) example: Message sent to server[0m
+[0;32mI (17164) example: Received message from server: -1 or -1[0m
+[0;32mI (17164) example: Message sent to server[0m
+[0;32mI (17264) example: Received message from server: -1 or -1[0m
+[0;32mI (17264) example: Message sent to server[0m
+[0;32mI (17364) example: Received message from server: -1 or -1[0m
+[0;32mI (17364) example: Message sent to server[0m
+[0;32mI (17464) example: Received message from server: -1 or -1[0m
+[0;32mI (17464) example: Message sent to server[0m
+[0;32mI (17564) example: Received message from server: -1 or -1[0m
+[0;32mI (17564) example: Message sent to server[0m
+[0;32mI (17664) example: Received message from server: -1 or -1[0m
+[0;32mI (17664) example: Message sent to server[0m
+[0;32mI (17764) example: Received message from server: -1 or -1[0m
+[0;32mI (17764) example: Message sent to server[0m
+[0;32mI (17864) example: Received message from server: -1 or -1[0m
+[0;32mI (17864) example: Message sent to server[0m
+[0;32mI (17964) example: Received message from server: -1 or -1[0m
+[0;32mI (17964) example: Message sent to server[0m
+[0;32mI (18064) example: Received message from server: -1 or -1[0m
+[0;32mI (18064) example: Message sent to server[0m
+[0;32mI (18164) example: Received message from server: -1 or -1[0m
+[0;32mI (18164) example: Message sent to server[0m
+[0;32mI (18264) example: Received message from server: -1 or -1[0m
+[0;32mI (18264) example: Message sent to server[0m
+[0;32mI (18364) example: Received message from server: -1 or -1[0m
+[0;32mI (18364) example: Message sent to server[0m
+[0;32mI (18464) example: Received message from server: -1 or -1[0m
+[0;32mI (18464) example: Message sent to server[0m
+[0;32mI (18564) example: Received message from server: -1 or -1[0m
+[0;32mI (18564) example: Message sent to server[0m
+[0;32mI (18664) example: Received message from server: -1 or -1[0m
+[0;32mI (18664) example: Message sent to server[0m
+[0;32mI (18764) example: Received message from server: -1 or -1[0m
+[0;32mI (18764) example: Message sent to server[0m
+[0;32mI (18864) example: Received message from server: -1 or -1[0m
+[0;32mI (18864) example: Message sent to server[0m
+[0;32mI (18964) example: Received message from server: -1 or -1[0m
+[0;32mI (18964) example: Message sent to server[0m
+[0;32mI (19064) example: Received message from server: -1 or -1[0m
+[0;32mI (19064) example: Message sent to server[0m
+[0;32mI (19164) example: Received message from server: -1 or -1[0m
+[0;32mI (19164) example: Message sent to server[0m
+[0;32mI (19264) example: Received message from server: -1 or -1[0m
+[0;32mI (19264) example: Message sent to server[0m
+[0;32mI (19364) example: Received message from server: -1 or -1[0m
+[0;32mI (19364) example: Message sent to server[0m
+[0;32mI (19464) example: Received message from server: -1 or -1[0m
+[0;32mI (19464) example: Message sent to server[0m
+[0;32mI (19564) example: Received message from server: -1 or -1[0m
+[0;32mI (19564) example: Message sent to server[0m
+[0;32mI (19664) example: Received message from server: -1 or -1[0m
+[0;32mI (19664) example: Message sent to server[0m
+[0;32mI (19764) example: Received message from server: -1 or -1[0m
+[0;32mI (19764) example: Message sent to server[0m
+[0;32mI (19864) example: Received message from server: -1 or -1[0m
+[0;32mI (19864) example: Message sent to server[0m
+[0;32mI (19964) example: Received message from server: -1 or -1[0m
+[0;32mI (19964) example: Message sent to server[0m
+[0;32mI (20064) example: Received message from server: -1 or -1[0m
+[0;32mI (20064) example: Message sent to server[0m
+[0;32mI (20164) example: Received message from server: -1 or -1[0m
+[0;32mI (20164) example: Message sent to server[0m
+[0;32mI (20264) example: Received message from server: -1 or -1[0m
+[0;32mI (20264) example: Message sent to server[0m
+[0;32mI (20364) example: Received message from server: -1 or -1[0m
+[0;32mI (20364) example: Message sent to server[0m
+[0;32mI (20464) example: Received message from server: -1 or -1[0m
+[0;32mI (20464) example: Message sent to server[0m
+[0;32mI (20564) example: Received message from server: -1 or -1[0m
+[0;32mI (20564) example: Message sent to server[0m
+[0;32mI (20664) example: Received message from server: -1 or -1[0m
+[0;32mI (20664) example: Message sent to server[0m
+[0;32mI (20764) example: Received message from server: -1 or -1[0m
+[0;32mI (20764) example: Message sent to server[0m
+[0;32mI (20864) example: Received message from server: -1 or -1[0m
+[0;32mI (20864) example: Message sent to server[0m
+[0;32mI (20964) example: Received message from server: -1 or -1[0m
+[0;32mI (20964) example: Message sent to server[0m
+[0;32mI (21064) example: Received message from server: -1 or -1[0m
+[0;32mI (21064) example: Message sent to server[0m
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15532
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (29) boot: ESP-IDF v5.2-dirty 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Apr 17 2024 19:06:56[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v1.0[0m
+[0;32mI (37) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (42) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (46) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (60) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (67) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (82) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (94) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=23d88h (146824) map[0m
+[0;32mI (153) esp_image: segment 1: paddr=00033db0 vaddr=3ffb0000 size=03bech ( 15340) load[0m
+[0;32mI (159) esp_image: segment 2: paddr=000379a4 vaddr=40080000 size=08674h ( 34420) load[0m
+[0;32mI (172) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=7b61ch (505372) map[0m
+[0;32mI (346) esp_image: segment 4: paddr=000bb644 vaddr=40088674 size=0e0c4h ( 57540) load[0m
+[0;32mI (380) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (380) boot: Disabling RNG early entropy source...[0m
+[0;32mI (391) cpu_start: Multicore app[0m
+[0;32mI (400) cpu_start: Pro cpu start user code[0m
+[0;32mI (400) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (400) cpu_start: Application information:[0m
+[0;32mI (403) cpu_start: Project name:     main[0m
+[0;32mI (408) cpu_start: App version:      b6da4d5-dirty[0m
+[0;32mI (413) cpu_start: Compile time:     Apr 17 2024 21:43:16[0m
+[0;32mI (419) cpu_start: ELF file SHA256:  61acc57e9...[0m
+[0;32mI (425) cpu_start: ESP-IDF:          v5.2-dirty[0m
+[0;32mI (430) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (435) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (440) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (444) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (452) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (457) heap_init: At 3FFB7CF8 len 00028308 (160 KiB): DRAM[0m
+[0;32mI (464) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (470) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (477) heap_init: At 40096738 len 000098C8 (38 KiB): IRAM[0m
+[0;32mI (484) spi_flash: detected chip: generic[0m
+[0;32mI (487) spi_flash: flash io: dio[0m
+[0;33mW (491) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (505) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;33mW (515) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (524) main_task: Started on CPU0[0m
+[0;32mI (534) main_task: Calling app_main()[0m
+I (594) wifi:wifi driver task: 3ffbfde8, prio:23, stack:6656, core=0
+I (614) wifi:wifi firmware version: cc1dd81
+I (624) wifi:wifi certification version: v7.0
+I (624) wifi:config NVS flash: enabled
+I (624) wifi:config nano formating: disabled
+I (624) wifi:Init data frame dynamic rx buffer num: 32
+I (624) wifi:Init static rx mgmt buffer num: 5
+I (634) wifi:Init management short buffer num: 32
+I (634) wifi:Init dynamic tx buffer num: 32
+I (644) wifi:Init static rx buffer size: 1600
+I (644) wifi:Init static rx buffer num: 10
+I (644) wifi:Init dynamic rx buffer num: 32
+[0;32mI (654) wifi_init: rx ba win: 6[0m
+[0;32mI (654) wifi_init: tcpip mbox: 32[0m
+[0;32mI (664) wifi_init: udp mbox: 6[0m
+[0;32mI (664) wifi_init: tcp mbox: 6[0m
+[0;32mI (664) wifi_init: tcp tx win: 5760[0m
+[0;32mI (674) wifi_init: tcp rx win: 5760[0m
+[0;32mI (674) wifi_init: tcp mss: 1440[0m
+[0;32mI (684) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (684) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (694) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (774) wifi:mode : sta (fc:f5:c4:16:27:98)
+I (774) wifi:enable tsf
+[0;32mI (774) example: wifi_init_sta finished.[0m
+I (784) wifi:new:<5,1>, old:<1,0>, ap:<255,255>, sta:<5,1>, prof:1
+I (784) wifi:state: init -> auth (b0)
+I (794) wifi:state: auth -> assoc (0)
+I (794) wifi:state: assoc -> run (10)
+I (804) wifi:<ba-add>idx:0 (ifx:0, 30:23:03:c7:9f:8c), tid:0, ssn:0, winSize:64
+I (834) wifi:connected with Group_5, aid = 3, channel 5, 40U, bssid = 30:23:03:c7:9f:8c
+I (834) wifi:security: WPA2-PSK, phy: bgn, rssi: -54
+I (834) wifi:pm start, type: 1
+
+I (844) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (914) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (3344) esp_netif_handlers: sta ip: 192.168.1.38, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (3344) example: got ip:192.168.1.38[0m
+[0;32mI (3344) example: connected to ap SSID:Group_5 password:smartsys[0m
+[0;32mI (3354) example: Create timer and operator[0m
+[0;32mI (3354) example: Connect timer and operator[0m
+[0;32mI (3364) example: Create comparator and generator from the operator[0m
+[0;32mI (3364) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (3374) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (3384) example: Set generator action on timer and compare event[0m
+[0;32mI (3394) example: Enable and start timer[0m
+[0;32mI (7894) example: Message sent to server[0m
+[0;32mI (10894) main_task: Returned from app_main()[0m
+4
+[0;32mI (22014) example: Received message from server: 4 or 4[0m
+[0;32mI (22024) example: Message sent to server[0m
+4
+[0;32mI (26214) example: Received message from server: 4 or 4[0m
+[0;32mI (26214) example: Message sent to server[0m
+4
+[0;32mI (26624) example: Received message from server: 4 or 4[0m
+[0;32mI (26624) example: Message sent to server[0m
+4
+[0;32mI (26934) example: Received message from server: 4 or 4[0m
+[0;32mI (26934) example: Message sent to server[0m
+3
+[0;32mI (27344) example: Received message from server: 3 or 3[0m
+[0;32mI (27344) example: Message sent to server[0m
+3
+[0;32mI (27644) example: Received message from server: 3 or 3[0m
+[0;32mI (27654) example: Message sent to server[0m
+3
+[0;32mI (27864) example: Received message from server: 3 or 3[0m
+[0;32mI (27864) example: Message sent to server[0m
+3
+[0;32mI (28264) example: Received message from server: 3 or 3[0m
+[0;32mI (28264) example: Message sent to server[0m
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15532
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (29) boot: ESP-IDF v5.2-dirty 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Apr 17 2024 19:06:56[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v1.0[0m
+[0;32mI (37) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (42) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (46) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (60) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (67) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (82) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (94) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=23d88h (146824) map[0m
+[0;32mI (153) esp_image: segment 1: paddr=00033db0 vaddr=3ffb0000 size=03bech ( 15340) load[0m
+[0;32mI (158) esp_image: segment 2: paddr=000379a4 vaddr=40080000 size=08674h ( 34420) load[0m
+[0;32mI (172) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=7b61ch (505372) map[0m
+[0;32mI (346) esp_image: segment 4: paddr=000bb644 vaddr=40088674 size=0e0c4h ( 57540) load[0m
+[0;32mI (380) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (380) boot: Disabling RNG early entropy source...[0m
+[0;32mI (391) cpu_start: Multicore app[0m
+[0;32mI (400) cpu_start: Pro cpu start user code[0m
+[0;32mI (400) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (400) cpu_start: Application information:[0m
+[0;32mI (403) cpu_start: Project name:     main[0m
+[0;32mI (408) cpu_start: App version:      b6da4d5-dirty[0m
+[0;32mI (413) cpu_start: Compile time:     Apr 17 2024 21:43:16[0m
+[0;32mI (419) cpu_start: ELF file SHA256:  61acc57e9...[0m
+[0;32mI (425) cpu_start: ESP-IDF:          v5.2-dirty[0m
+[0;32mI (430) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (435) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (439) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (444) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (452) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (457) heap_init: At 3FFB7CF8 len 00028308 (160 KiB): DRAM[0m
+[0;32mI (464) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (470) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (476) heap_init: At 40096738 len 000098C8 (38 KiB): IRAM[0m
+[0;32mI (484) spi_flash: detected chip: generic[0m
+[0;32mI (487) spi_flash: flash io: dio[0m
+[0;33mW (491) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (505) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;33mW (515) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (524) main_task: Started on CPU0[0m
+[0;32mI (534) main_task: Calling app_main()[0m
+I (594) wifi:wifi driver task: 3ffbfde8, prio:23, stack:6656, core=0
+I (614) wifi:wifi firmware version: cc1dd81
+I (624) wifi:wifi certification version: v7.0
+I (624) wifi:config NVS flash: enabled
+I (624) wifi:config nano formating: disabled
+I (624) wifi:Init data frame dynamic rx buffer num: 32
+I (624) wifi:Init static rx mgmt buffer num: 5
+I (634) wifi:Init management short buffer num: 32
+I (634) wifi:Init dynamic tx buffer num: 32
+I (644) wifi:Init static rx buffer size: 1600
+I (644) wifi:Init static rx buffer num: 10
+I (644) wifi:Init dynamic rx buffer num: 32
+[0;32mI (654) wifi_init: rx ba win: 6[0m
+[0;32mI (654) wifi_init: tcpip mbox: 32[0m
+[0;32mI (664) wifi_init: udp mbox: 6[0m
+[0;32mI (664) wifi_init: tcp mbox: 6[0m
+[0;32mI (664) wifi_init: tcp tx win: 5760[0m
+[0;32mI (674) wifi_init: tcp rx win: 5760[0m
+[0;32mI (674) wifi_init: tcp mss: 1440[0m
+[0;32mI (684) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (684) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (694) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (774) wifi:mode : sta (fc:f5:c4:16:27:98)
+I (774) wifi:enable tsf
+[0;32mI (774) example: wifi_init_sta finished.[0m
+I (854) wifi:new:<5,1>, old:<1,0>, ap:<255,255>, sta:<5,1>, prof:1
+I (864) wifi:state: init -> auth (b0)
+I (864) wifi:state: auth -> assoc (0)
+I (874) wifi:state: assoc -> run (10)
+I (874) wifi:<ba-add>idx:0 (ifx:0, 30:23:03:c7:9f:8c), tid:0, ssn:0, winSize:64
+I (904) wifi:connected with Group_5, aid = 3, channel 5, 40U, bssid = 30:23:03:c7:9f:8c
+I (904) wifi:security: WPA2-PSK, phy: bgn, rssi: -55
+I (904) wifi:pm start, type: 1
+
+I (904) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (954) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (3414) esp_netif_handlers: sta ip: 192.168.1.38, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (3414) example: got ip:192.168.1.38[0m
+[0;32mI (3414) example: connected to ap SSID:Group_5 password:smartsys[0m
+[0;32mI (3424) example: Create timer and operator[0m
+[0;32mI (3424) example: Connect timer and operator[0m
+[0;32mI (3434) example: Create comparator and generator from the operator[0m
+[0;32mI (3434) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (3444) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (3454) example: Set generator action on timer and compare event[0m
+[0;32mI (3464) example: Enable and start timer[0m
+[0;32mI (7974) example: Message sent to server[0m
+[0;32mI (10974) main_task: Returned from app_main()[0m
+3
+[0;32mI (11504) example: Received message from server: 3 or 3[0m
+[0;32mI (11514) example: Message sent to server[0m
+4
+[0;32mI (11714) example: Received message from server: 4 or 4[0m
+[0;32mI (11714) example: Message sent to server[0m
+4
+[0;32mI (12734) example: Received message from server: 4 or 4[0m
+[0;32mI (12734) example: Message sent to server[0m
+4
+[0;32mI (14574) example: Received message from server: 4 or 4[0m
+[0;32mI (14584) example: Message sent to server[0m
+3
+[0;32mI (14884) example: Received message from server: 3 or 3[0m
+[0;32mI (14884) example: Message sent to server[0m
+4
+[0;32mI (15194) example: Received message from server: 4 or 4[0m
+[0;32mI (15194) example: Message sent to server[0m
+3
+[0;32mI (15404) example: Received message from server: 3 or 3[0m
+[0;32mI (15404) example: Message sent to server[0m
+4
+[0;32mI (15604) example: Received message from server: 4 or 4[0m
+[0;32mI (15604) example: Message sent to server[0m
+3
+[0;32mI (15704) example: Received message from server: 3 or 3[0m
+[0;32mI (15704) example: Message sent to server[0m
+4
+[0;32mI (15914) example: Received message from server: 4 or 4[0m
+[0;32mI (15914) example: Message sent to server[0m
+3
+[0;32mI (16114) example: Received message from server: 3 or 3[0m
+[0;32mI (16114) example: Message sent to server[0m
+4
+[0;32mI (16224) example: Received message from server: 4 or -1[0m
+[0;32mI (16224) example: Message sent to server[0m
+3
+[0;32mI (16324) example: Received message from server: 3 or 3[0m
+[0;32mI (16324) example: Message sent to server[0m
+4
+[0;32mI (16524) example: Received message from server: 4 or 4[0m
+[0;32mI (16524) example: Message sent to server[0m
+3
+[0;32mI (16734) example: Received message from server: 3 or 3[0m
+[0;32mI (16734) example: Message sent to server[0m
+4
+[0;32mI (17034) example: Received message from server: 4 or 4[0m
+[0;32mI (17034) example: Message sent to server[0m
+3
+[0;32mI (17344) example: Received message from server: 3 or 3[0m
+[0;32mI (17344) example: Message sent to server[0m
+4
+[0;32mI (17554) example: Received message from server: 4 or 4[0m
+[0;32mI (17554) example: Message sent to server[0m
+3
+[0;32mI (17754) example: Received message from server: 3 or 3[0m
+[0;32mI (17754) example: Message sent to server[0m
+4
+[0;32mI (18064) example: Received message from server: 4 or 4[0m
+[0;32mI (18064) example: Message sent to server[0m
+3
+[0;32mI (18364) example: Received message from server: 3 or 3[0m
+[0;32mI (18374) example: Message sent to server[0m
+4
+[0;32mI (19294) example: Received message from server: 4 or 4[0m
+[0;32mI (19294) example: Message sent to server[0m
+3
+[0;32mI (19494) example: Received message from server: 3 or 3[0m
+[0;32mI (19494) example: Message sent to server[0m
+4
+[0;32mI (23184) example: Received message from server: 4 or 4[0m
+[0;32mI (23184) example: Message sent to server[0m
+4
+[0;32mI (23384) example: Received message from server: 4 or 4[0m
+[0;32mI (23384) example: Message sent to server[0m
+1
+[0;32mI (23594) example: Received message from server: 1 or 1[0m
+[0;32mI (23594) example: Message sent to server[0m
+5
+[0;32mI (24414) example: Received message from server: 5 or 5[0m
+[0;32mI (24414) example: Message sent to server[0m
+5
+[0;32mI (26974) example: Received message from server: 5 or -1[0m
+[0;32mI (26974) example: Message sent to server[0m
+5
+[0;32mI (28404) example: Received message from server: 5 or 5[0m
+[0;32mI (28404) example: Message sent to server[0m
+5
+[0;32mI (29124) example: Received message from server: 5 or 5[0m
+[0;32mI (29124) example: Message sent to server[0m
+0
+[0;32mI (33524) example: Received message from server: 0 or 0[0m
+[0;32mI (33524) example: Message sent to server[0m
+4
+[0;32mI (35164) example: Received message from server: 4 or 4[0m
+[0;32mI (35164) example: Message sent to server[0m
+3
+[0;32mI (35464) example: Received message from server: 3 or 3[0m
+[0;32mI (35474) example: Message sent to server[0m
+4
+[0;32mI (35674) example: Received message from server: 4 or 4[0m
+[0;32mI (35674) example: Message sent to server[0m
+3
+[0;32mI (35774) example: Received message from server: 3 or 3[0m
+[0;32mI (35774) example: Message sent to server[0m
+4
+[0;32mI (35874) example: Received message from server: 4 or 4[0m
+[0;32mI (35884) example: Message sent to server[0m
+3
+[0;32mI (36084) example: Received message from server: 3 or 3[0m
+[0;32mI (36084) example: Message sent to server[0m
+4
+[0;32mI (36184) example: Received message from server: 4 or 4[0m
+[0;32mI (36184) example: Message sent to server[0m
+3
+[0;32mI (36284) example: Received message from server: 3 or 3[0m
+[0;32mI (36284) example: Message sent to server[0m
+4
+[0;32mI (36384) example: Received message from server: 4 or 4[0m
+[0;32mI (36384) example: Message sent to server[0m
+3
+[0;32mI (36484) example: Received message from server: 3 or 3[0m
+[0;32mI (36484) example: Message sent to server[0m
+4
+[0;32mI (36584) example: Received message from server: 4 or 4[0m
+[0;32mI (36584) example: Message sent to server[0m
+4
+[0;32mI (43864) example: Received message from server: 4 or 4[0m
+[0;32mI (43864) example: Message sent to server[0m
+3
+[0;32mI (44384) example: Received message from server: 3 or 3[0m
+[0;32mI (44384) example: Message sent to server[0m
+4
+[0;32mI (44484) example: Received message from server: 4 or 4[0m
+[0;32mI (44484) example: Message sent to server[0m
+3
+[0;32mI (44894) example: Received message from server: 3 or 3[0m
+[0;32mI (44894) example: Message sent to server[0m
+4
+[0;32mI (45094) example: Received message from server: 4 or 4[0m
+[0;32mI (45094) example: Message sent to server[0m
+3
+[0;32mI (45194) example: Received message from server: 3 or 3[0m
+[0;32mI (45194) example: Message sent to server[0m
+4
+[0;32mI (45294) example: Received message from server: 4 or 4[0m
+[0;32mI (45294) example: Message sent to server[0m
+3
+[0;32mI (45404) example: Received message from server: 3 or 3[0m
+[0;32mI (45404) example: Message sent to server[0m
+4
+[0;32mI (45504) example: Received message from server: 4 or 4[0m
+[0;32mI (45504) example: Message sent to server[0m
+3
+[0;32mI (70184) example: Received message from server: 3 or 3[0m
+[0;32mI (70184) example: Message sent to server[0m
+3
+[0;32mI (71104) example: Received message from server: 3 or 3[0m
+[0;32mI (71104) example: Message sent to server[0m
+4
+[0;32mI (71614) example: Received message from server: 4 or 4[0m
+[0;32mI (71624) example: Message sent to server[0m
+4
+[0;32mI (72024) example: Received message from server: 4 or 4[0m
+[0;32mI (72024) example: Message sent to server[0m
+4
+[0;32mI (72544) example: Received message from server: 4 or 4[0m
+[0;32mI (72544) example: Message sent to server[0m
+3
+[0;32mI (72844) example: Received message from server: 3 or 3[0m
+[0;32mI (72844) example: Message sent to server[0m
+3
+[0;32mI (73254) example: Received message from server: 3 or 3[0m
+[0;32mI (73254) example: Message sent to server[0m
+3
+[0;32mI (73464) example: Received message from server: 3 or 3[0m
+[0;32mI (73464) example: Message sent to server[0m
+3
+[0;32mI (73664) example: Received message from server: 3 or 3[0m
+[0;32mI (73664) example: Message sent to server[0m
+3
+[0;32mI (73974) example: Received message from server: 3 or 3[0m
+[0;32mI (73974) example: Message sent to server[0m
+3
+[0;32mI (74174) example: Received message from server: 3 or 3[0m
+[0;32mI (74174) example: Message sent to server[0m
+4
+[0;32mI (74484) example: Received message from server: 4 or 4[0m
+[0;32mI (74484) example: Message sent to server[0m
+4
+[0;32mI (74694) example: Received message from server: 4 or 4[0m
+[0;32mI (74694) example: Message sent to server[0m
+4
+[0;32mI (74894) example: Received message from server: 4 or 4[0m
+[0;32mI (74894) example: Message sent to server[0m
+4
+[0;32mI (75104) example: Received message from server: 4 or 4[0m
+[0;32mI (75104) example: Message sent to server[0m
+4
+[0;32mI (75304) example: Received message from server: 4 or 4[0m
+[0;32mI (75304) example: Message sent to server[0m
+4
+[0;32mI (75514) example: Received message from server: 4 or 4[0m
+[0;32mI (75514) example: Message sent to server[0m
+4
+[0;32mI (75714) example: Received message from server: 4 or 4[0m
+[0;32mI (75714) example: Message sent to server[0m
+3
+[0;32mI (75914) example: Received message from server: 3 or 3[0m
+[0;32mI (75924) example: Message sent to server[0m
+3
+[0;32mI (76124) example: Received message from server: 3 or 3[0m
+[0;32mI (76124) example: Message sent to server[0m
+3
+[0;32mI (76324) example: Received message from server: 3 or 3[0m
+[0;32mI (76334) example: Message sent to server[0m
+3
+[0;32mI (76534) example: Received message from server: 3 or 3[0m
+[0;32mI (76534) example: Message sent to server[0m
+3
+[0;32mI (76734) example: Received message from server: 3 or 3[0m
+[0;32mI (76744) example: Message sent to server[0m
+3
+[0;32mI (76944) example: Received message from server: 3 or 3[0m
+[0;32mI (76944) example: Message sent to server[0m
+3
+[0;32mI (77144) example: Received message from server: 3 or 3[0m
+[0;32mI (77144) example: Message sent to server[0m
+3
+[0;32mI (77354) example: Received message from server: 3 or 3[0m
+[0;32mI (77354) example: Message sent to server[0m
+3
+[0;32mI (77554) example: Received message from server: 3 or 3[0m
+[0;32mI (77554) example: Message sent to server[0m
+3
+[0;32mI (77664) example: Received message from server: 3 or 3[0m
+[0;32mI (77664) example: Message sent to server[0m
+3
+[0;32mI (91274) example: Received message from server: 3 or 3[0m
+[0;32mI (91284) example: Message sent to server[0m
+3
+[0;32mI (91994) example: Received message from server: 3 or 3[0m
+[0;32mI (91994) example: Message sent to server[0m
+3
+[0;32mI (92304) example: Received message from server: 3 or 3[0m
+[0;32mI (92304) example: Message sent to server[0m
+4
+[0;32mI (92714) example: Received message from server: 4 or 4[0m
+[0;32mI (92714) example: Message sent to server[0m
+4
+[0;32mI (92914) example: Received message from server: 4 or 4[0m
+[0;32mI (92914) example: Message sent to server[0m
+4
+[0;32mI (93124) example: Received message from server: 4 or 4[0m
+[0;32mI (93124) example: Message sent to server[0m
+4
+[0;32mI (93324) example: Received message from server: 4 or 4[0m
+[0;32mI (93324) example: Message sent to server[0m
+4
+[0;32mI (93634) example: Received message from server: 4 or 4[0m
+[0;32mI (93644) example: Message sent to server[0m
+4
+[0;32mI (93834) example: Received message from server: 4 or 4[0m
+[0;32mI (93844) example: Message sent to server[0m
+4
+[0;32mI (94144) example: Received message from server: 4 or 4[0m
+[0;32mI (94144) example: Message sent to server[0m
+4
+[0;32mI (94454) example: Received message from server: 4 or 4[0m
+[0;32mI (94454) example: Message sent to server[0m
+4
+[0;32mI (94864) example: Received message from server: 4 or 4[0m
+[0;32mI (94864) example: Message sent to server[0m
+3
+[0;32mI (95164) example: Received message from server: 3 or 3[0m
+[0;32mI (95174) example: Message sent to server[0m
+3
+[0;32mI (95474) example: Received message from server: 3 or 3[0m
+[0;32mI (95484) example: Message sent to server[0m
+3
+[0;32mI (96094) example: Received message from server: 3 or 3[0m
+[0;32mI (96094) example: Message sent to server[0m
+3
+[0;32mI (96394) example: Received message from server: 3 or 3[0m
+[0;32mI (96404) example: Message sent to server[0m
+3
+[0;32mI (96804) example: Received message from server: 3 or 3[0m
+[0;32mI (96814) example: Message sent to server[0m
+3
+[0;32mI (97114) example: Received message from server: 3 or 3[0m
+[0;32mI (97114) example: Message sent to server[0m
+4
+[0;32mI (97324) example: Received message from server: 4 or 4[0m
+[0;32mI (97324) example: Message sent to server[0m
+3
+[0;32mI (97424) example: Received message from server: 3 or 3[0m
+[0;32mI (97424) example: Message sent to server[0m
+4
+[0;32mI (97624) example: Received message from server: 4 or 4[0m
+[0;32mI (97634) example: Message sent to server[0m
+3
+[0;32mI (97734) example: Received message from server: 3 or 3[0m
+[0;32mI (97734) example: Message sent to server[0m
+4
+[0;32mI (97834) example: Received message from server: 4 or 4[0m
+[0;32mI (97834) example: Message sent to server[0m
+3
+[0;32mI (97934) example: Received message from server: 3 or 3[0m
+[0;32mI (97934) example: Message sent to server[0m
+3
+[0;32mI (105714) example: Received message from server: 3 or 3[0m
+[0;32mI (105724) example: Message sent to server[0m
+4
+[0;32mI (106024) example: Received message from server: 4 or 4[0m
+[0;32mI (106024) example: Message sent to server[0m
+4
+[0;32mI (106534) example: Received message from server: 4 or 4[0m
+[0;32mI (106534) example: Message sent to server[0m
+4
+[0;32mI (106844) example: Received message from server: 4 or 4[0m
+[0;32mI (106844) example: Message sent to server[0m
+4
+[0;32mI (107564) example: Received message from server: 4 or 4[0m
+[0;32mI (107564) example: Message sent to server[0m
+4
+[0;32mI (107974) example: Received message from server: 4 or 4[0m
+[0;32mI (107974) example: Message sent to server[0m
+4
+[0;32mI (108274) example: Received message from server: 4 or 4[0m
+[0;32mI (108274) example: Message sent to server[0m
+4
+[0;32mI (108484) example: Received message from server: 4 or 4[0m
+[0;32mI (108484) example: Message sent to server[0m
+4
+[0;32mI (108794) example: Received message from server: 4 or 4[0m
+[0;32mI (108794) example: Message sent to server[0m
+4
+[0;32mI (109094) example: Received message from server: 4 or 4[0m
+[0;32mI (109094) example: Message sent to server[0m
+3
+[0;32mI (109604) example: Received message from server: 3 or 3[0m
+[0;32mI (109614) example: Message sent to server[0m
+3
+[0;32mI (109914) example: Received message from server: 3 or 3[0m
+[0;32mI (109914) example: Message sent to server[0m
+3
+[0;32mI (110224) example: Received message from server: 3 or 3[0m
+[0;32mI (110224) example: Message sent to server[0m
+3
+[0;32mI (110534) example: Received message from server: 3 or 3[0m
+[0;32mI (110534) example: Message sent to server[0m
+3
+[0;32mI (110834) example: Received message from server: 3 or 3[0m
+[0;32mI (110844) example: Message sent to server[0m
+4
+[0;32mI (111144) example: Received message from server: 4 or 4[0m
+[0;32mI (111144) example: Message sent to server[0m
+4
+[0;32mI (111344) example: Received message from server: 4 or 4[0m
+[0;32mI (111354) example: Message sent to server[0m
+4
+[0;32mI (111654) example: Received message from server: 4 or 4[0m
+[0;32mI (111654) example: Message sent to server[0m
+4
+[0;32mI (111864) example: Received message from server: 4 or 4[0m
+[0;32mI (111864) example: Message sent to server[0m
+4
+[0;32mI (112064) example: Received message from server: 4 or 4[0m
+[0;32mI (112064) example: Message sent to server[0m
+4
+[0;32mI (112374) example: Received message from server: 4 or 4[0m
+[0;32mI (112374) example: Message sent to server[0m
+4
+[0;32mI (112574) example: Received message from server: 4 or 4[0m
+[0;32mI (112584) example: Message sent to server[0m
+4
+[0;32mI (112884) example: Received message from server: 4 or 4[0m
+[0;32mI (112884) example: Message sent to server[0m
+4
+[0;32mI (113094) example: Received message from server: 4 or 4[0m
+[0;32mI (113094) example: Message sent to server[0m
+4
+[0;32mI (113394) example: Received message from server: 4 or 4[0m
+[0;32mI (113404) example: Message sent to server[0m
+[0;31mE (113474) mcpwm: mcpwm_comparator_set_compare_value(214): compare value out of range[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x400d6e09
+file: "./main/main.c" line 806
+func: move_task
+expression: mcpwm_comparator_set_compare_value(comparator_steer, example_angle_to_compare(heading))
+
+abort() was called at PC 0x4008919f on core 0
+
+
+Backtrace: 0x400817d6:0x3ffc9460 0x400891a9:0x3ffc9480 0x40090951:0x3ffc94a0 0x4008919f:0x3ffc9510 0x400d6e09:0x3ffc9540 0x40089cb5:0x3ffc9560
+
+
+
+
+ELF file SHA256: 61acc57e9
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15532
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (29) boot: ESP-IDF v5.2-dirty 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Apr 17 2024 19:06:56[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.0[0m
+[0;32mI (38) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (42) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (60) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (68) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (82) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (94) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=23d88h (146824) map[0m
+[0;32mI (153) esp_image: segment 1: paddr=00033db0 vaddr=3ffb0000 size=03bech ( 15340) load[0m
+[0;32mI (159) esp_image: segment 2: paddr=000379a4 vaddr=40080000 size=08674h ( 34420) load[0m
+[0;32mI (173) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=7b61ch (505372) map[0m
+[0;32mI (346) esp_image: segment 4: paddr=000bb644 vaddr=40088674 size=0e0c4h ( 57540) load[0m
+[0;32mI (380) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (380) boot: Disabling RNG early entropy source...[0m
+[0;32mI (392) cpu_start: Multicore app[0m
+[0;32mI (400) cpu_start: Pro cpu start user code[0m
+[0;32mI (400) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (401) cpu_start: Application information:[0m
+[0;32mI (403) cpu_start: Project name:     main[0m
+[0;32mI (408) cpu_start: App version:      b6da4d5-dirty[0m
+[0;32mI (414) cpu_start: Compile time:     Apr 17 2024 21:43:16[0m
+[0;32mI (420) cpu_start: ELF file SHA256:  61acc57e9...[0m
+[0;32mI (425) cpu_start: ESP-IDF:          v5.2-dirty[0m
+[0;32mI (430) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (435) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (440) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (445) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (452) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (458) heap_init: At 3FFB7CF8 len 00028308 (160 KiB): DRAM[0m
+[0;32mI (464) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (470) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (477) heap_init: At 40096738 len 000098C8 (38 KiB): IRAM[0m
+[0;32mI (485) spi_flash: detected chip: generic[0m
+[0;32mI (488) spi_flash: flash io: dio[0m
+[0;33mW (492) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (505) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;33mW (515) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (525) main_task: Started on CPU0[0m
+[0;32mI (535) main_task: Calling app_main()[0m
+I (595) wifi:wifi driver task: 3ffbfde8, prio:23, stack:6656, core=0
+I (615) wifi:wifi firmware version: cc1dd81
+I (625) wifi:wifi certification version: v7.0
+I (625) wifi:config NVS flash: enabled
+I (625) wifi:config nano formating: disabled
+I (625) wifi:Init data frame dynamic rx buffer num: 32
+I (625) wifi:Init static rx mgmt buffer num: 5
+I (635) wifi:Init management short buffer num: 32
+I (635) wifi:Init dynamic tx buffer num: 32
+I (645) wifi:Init static rx buffer size: 1600
+I (645) wifi:Init static rx buffer num: 10
+I (645) wifi:Init dynamic rx buffer num: 32
+[0;32mI (655) wifi_init: rx ba win: 6[0m
+[0;32mI (655) wifi_init: tcpip mbox: 32[0m
+[0;32mI (665) wifi_init: udp mbox: 6[0m
+[0;32mI (665) wifi_init: tcp mbox: 6[0m
+[0;32mI (665) wifi_init: tcp tx win: 5760[0m
+[0;32mI (675) wifi_init: tcp rx win: 5760[0m
+[0;32mI (675) wifi_init: tcp mss: 1440[0m
+[0;32mI (685) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (685) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (695) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (775) wifi:mode : sta (fc:f5:c4:16:27:98)
+I (775) wifi:enable tsf
+[0;32mI (775) example: wifi_init_sta finished.[0m
+I (785) wifi:new:<5,1>, old:<1,0>, ap:<255,255>, sta:<5,1>, prof:1
+I (785) wifi:state: init -> auth (b0)
+I (795) wifi:state: auth -> assoc (0)
+I (795) wifi:state: assoc -> run (10)
+I (805) wifi:<ba-add>idx:0 (ifx:0, 30:23:03:c7:9f:8c), tid:0, ssn:0, winSize:64
+I (825) wifi:connected with Group_5, aid = 3, channel 5, 40U, bssid = 30:23:03:c7:9f:8c
+I (835) wifi:security: WPA2-PSK, phy: bgn, rssi: -48
+I (835) wifi:pm start, type: 1
+
+I (835) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (895) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (2345) esp_netif_handlers: sta ip: 192.168.1.38, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (2345) example: got ip:192.168.1.38[0m
+[0;32mI (2345) example: connected to ap SSID:Group_5 password:smartsys[0m
+[0;32mI (2355) example: Create timer and operator[0m
+[0;32mI (2355) example: Connect timer and operator[0m
+[0;32mI (2365) example: Create comparator and generator from the operator[0m
+[0;32mI (2365) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2385) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2385) example: Set generator action on timer and compare event[0m
+[0;32mI (2395) example: Enable and start timer[0m
+[0;32mI (6895) example: Message sent to server[0m
+[0;32mI (9895) main_task: Returned from app_main()[0m
+4
+[0;32mI (20455) example: Received message from server: 4 or 4[0m
+[0;32mI (20455) example: Message sent to server[0m
+4
+[0;32mI (20965) example: Received message from server: 4 or 4[0m
+[0;32mI (20965) example: Message sent to server[0m
+4
+[0;32mI (21275) example: Received message from server: 4 or 4[0m
+[0;32mI (21275) example: Message sent to server[0m
+4
+[0;32mI (21585) example: Received message from server: 4 or 4[0m
+[0;32mI (21585) example: Message sent to server[0m
+4
+[0;32mI (21995) example: Received message from server: 4 or 4[0m
+[0;32mI (22005) example: Message sent to server[0m
+4
+[0;32mI (22915) example: Received message from server: 4 or 4[0m
+[0;32mI (22915) example: Message sent to server[0m
+4
+[0;32mI (23325) example: Received message from server: 4 or 4[0m
+[0;32mI (23325) example: Message sent to server[0m
+[0;31mE (23395) mcpwm: mcpwm_comparator_set_compare_value(214): compare value out of range[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x400d6e09
+file: "./main/main.c" line 806
+func: move_task
+expression: mcpwm_comparator_set_compare_value(comparator_steer, example_angle_to_compare(heading))
+
+abort() was called at PC 0x4008919f on core 0
+
+
+Backtrace: 0x400817d6:0x3ffc9650 0x400891a9:0x3ffc9670 0x40090951:0x3ffc9690 0x4008919f:0x3ffc9700 0x400d6e09:0x3ffc9730 0x40089cb5:0x3ffc9750
+
+
+
+
+ELF file SHA256: 61acc57e9
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15532
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (29) boot: ESP-IDF v5.2-dirty 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Apr 17 2024 19:06:56[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.0[0m
+[0;32mI (38) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (42) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (60) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (68) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (82) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (94) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=23d88h (146824) map[0m
+[0;32mI (153) esp_image: segment 1: paddr=00033db0 vaddr=3ffb0000 size=03bech ( 15340) load[0m
+[0;32mI (159) esp_image: segment 2: paddr=000379a4 vaddr=40080000 size=08674h ( 34420) load[0m
+[0;32mI (173) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=7b61ch (505372) map[0m
+[0;32mI (346) esp_image: segment 4: paddr=000bb644 vaddr=40088674 size=0e0c4h ( 57540) load[0m
+[0;32mI (380) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (380) boot: Disabling RNG early entropy source...[0m
+[0;32mI (392) cpu_start: Multicore app[0m
+[0;32mI (400) cpu_start: Pro cpu start user code[0m
+[0;32mI (400) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (401) cpu_start: Application information:[0m
+[0;32mI (403) cpu_start: Project name:     main[0m
+[0;32mI (408) cpu_start: App version:      b6da4d5-dirty[0m
+[0;32mI (414) cpu_start: Compile time:     Apr 17 2024 21:43:16[0m
+[0;32mI (420) cpu_start: ELF file SHA256:  61acc57e9...[0m
+[0;32mI (425) cpu_start: ESP-IDF:          v5.2-dirty[0m
+[0;32mI (430) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (435) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (440) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (445) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (452) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (458) heap_init: At 3FFB7CF8 len 00028308 (160 KiB): DRAM[0m
+[0;32mI (464) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (470) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (477) heap_init: At 40096738 len 000098C8 (38 KiB): IRAM[0m
+[0;32mI (485) spi_flash: detected chip: generic[0m
+[0;32mI (488) spi_flash: flash io: dio[0m
+[0;33mW (492) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (505) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;33mW (515) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (525) main_task: Started on CPU0[0m
+[0;32mI (535) main_task: Calling app_main()[0m
+I (595) wifi:wifi driver task: 3ffbfde8, prio:23, stack:6656, core=0
+I (615) wifi:wifi firmware version: cc1dd81
+I (625) wifi:wifi certification version: v7.0
+I (625) wifi:config NVS flash: enabled
+I (625) wifi:config nano formating: disabled
+I (625) wifi:Init data frame dynamic rx buffer num: 32
+I (625) wifi:Init static rx mgmt buffer num: 5
+I (635) wifi:Init management short buffer num: 32
+I (635) wifi:Init dynamic tx buffer num: 32
+I (645) wifi:Init static rx buffer size: 1600
+I (645) wifi:Init static rx buffer num: 10
+I (645) wifi:Init dynamic rx buffer num: 32
+[0;32mI (655) wifi_init: rx ba win: 6[0m
+[0;32mI (655) wifi_init: tcpip mbox: 32[0m
+[0;32mI (665) wifi_init: udp mbox: 6[0m
+[0;32mI (665) wifi_init: tcp mbox: 6[0m
+[0;32mI (665) wifi_init: tcp tx win: 5760[0m
+[0;32mI (675) wifi_init: tcp rx win: 5760[0m
+[0;32mI (675) wifi_init: tcp mss: 1440[0m
+[0;32mI (685) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (685) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (695) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (775) wifi:mode : sta (fc:f5:c4:16:27:98)
+I (775) wifi:enable tsf
+[0;32mI (775) example: wifi_init_sta finished.[0m
+I (785) wifi:new:<5,1>, old:<1,0>, ap:<255,255>, sta:<5,1>, prof:1
+I (785) wifi:state: init -> auth (b0)
+I (795) wifi:state: auth -> assoc (0)
+I (795) wifi:state: assoc -> run (10)
+I (805) wifi:<ba-add>idx:0 (ifx:0, 30:23:03:c7:9f:8c), tid:0, ssn:0, winSize:64
+I (825) wifi:connected with Group_5, aid = 3, channel 5, 40U, bssid = 30:23:03:c7:9f:8c
+I (825) wifi:security: WPA2-PSK, phy: bgn, rssi: -44
+I (835) wifi:pm start, type: 1
+
+I (835) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (895) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (3335) esp_netif_handlers: sta ip: 192.168.1.38, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (3335) example: got ip:192.168.1.38[0m
+[0;32mI (3335) example: connected to ap SSID:Group_5 password:smartsys[0m
+[0;32mI (3345) example: Create timer and operator[0m
+[0;32mI (3345) example: Connect timer and operator[0m
+[0;32mI (3355) example: Create comparator and generator from the operator[0m
+[0;32mI (3355) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (3365) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (3375) example: Set generator action on timer and compare event[0m
+[0;32mI (3385) example: Enable and start timer[0m
+[0;32mI (7895) example: Message sent to server[0m
+[0;32mI (10895) main_task: Returned from app_main()[0m
